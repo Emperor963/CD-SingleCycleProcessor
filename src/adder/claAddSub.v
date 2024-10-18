@@ -2,7 +2,7 @@
 
 module claAddSub(
     input[15:0] A,
-    input[15:0] B,
+    input[15:0] Bin,
     input Cin,
     input isSub,
 
@@ -10,6 +10,10 @@ module claAddSub(
     output Cout,
     output ovfl
 ); 
+
+reg [15:0] B;
+
+assign B = (Bin ^ {16{isSub}}) + isSub;
 
 wire[4:0] carry;
 wire[3:0] gen;
@@ -66,6 +70,8 @@ adder_4bit adder4(
 
 assign carry[4] = gen[3] | (prop[3] & carry[3]);
 
+assign ovfl = (!A[15] & !B[15] & tempSum[15]) | (A[15] & B[15] & !tempSum[15]);
 
+assign S = tempSum;
 
 endmodule;
