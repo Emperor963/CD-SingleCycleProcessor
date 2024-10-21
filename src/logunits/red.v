@@ -31,8 +31,8 @@ adder_4bit add1 (.A(A_a), .B(B_a), .C(Cout[0]), .Sum(Sum_b[15:12]), .Cout(Cout[1
 
 adder_4bit add2 (.A(A_d), .B(B_d), .C(1b'0), .Sum(Sum_c[3:0]), .Cout(Cout[2]), .P(dummy1), .G(dummy2), .ovfl(ovfl[0]));
 adder_4bit add3 (.A(A_c), .B(B_c), .C(Cout[1]), .Sum(Sum_d[7:4]), .Cout(Cout[3]), .P(dummy1), .G(dummy2), .ovfl(ovfl[1]));
-adder_4bit add5 (.A,(Sum_))
 
 
-              
+
+
 endmodule 
