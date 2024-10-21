@@ -3,7 +3,7 @@ module dff (
     output reg q,  // DFF output
     input d,  // DFF input
     input wen,  // Write Enable
-    input clk,
+    input clk, //clock
     input rst  // synchronous reset
 );
 
