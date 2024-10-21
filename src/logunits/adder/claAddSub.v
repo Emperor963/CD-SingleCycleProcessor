@@ -16,6 +16,7 @@ wire [15:0] B;
 assign B =  Bin ^ {16{isSub}}; 
 
 wire[4:0] carry;
+wire[3:0] LAcarry;
 wire[3:0] gen;
 wire[3:0] prop;
 wire[15:0] tempSum;
@@ -47,38 +48,35 @@ adder_4bit adder_01(
     .ovfl(ovfl4)
 );
 
-assign carry[1] = gen[0] | (prop[0] & carry[0]);
 
 adder_4bit adder2(
     .A(A[7:4]),
     .B(B[7:4]),
-    .Cin(Cin),
+    .Cin(LAcarry[0]),
     .Sum(tempSum[7:4]),
-    .Cout(carry[1]),
+    .Cout(carry[0]),
     .P(prop[1]),
     .G(gen[1]),
     .ovfl(ovfl4)
 );
 
-assign carry[2] = gen[1] | (prop[1] & carry[1]);
 
 adder_4bit adder3(
     .A(A[11:8]),
     .B(B[11:8]),
-    .Cin(Cin),
+    .Cin(LAcarry[1]),
     .Sum(tempSum[11:8]),
-    .Cout(carry[2]),
+    .Cout(carry[1]),
     .P(prop[2]),
     .G(gen[2]),
     .ovfl(ovfl4)
 );
 
-assign carry[3] = gen[2] | (prop[2] & carry[2]);
 
 adder_4bit adder4(
     .A(A[15:12]),
     .B(B[15:12]),
-    .Cin(Cin),
+    .Cin(LAcarry[2]),
     .Sum(tempSum[15:12]),
     .Cout(carry[3]),
     .P(prop[3]),
@@ -86,9 +84,11 @@ adder_4bit adder4(
     .ovfl(ovfl4)
 );
 
-assign carry[4] = gen[3] | (prop[3] & carry[3]);
+CLA cla1 (.G(gen),.P(prop), .Cin(Cin), .Cout(carry));
 
 assign ovfl = (!A[15] & !B[15] & tempSum[15]) | (A[15] & B[15] & !tempSum[15]);
+
+assign Cout = LAcarry[3];
 
 assign S = tempSum;
 
