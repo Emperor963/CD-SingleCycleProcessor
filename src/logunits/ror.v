@@ -5,7 +5,7 @@ module ror(
     output[15:0] Aout
 );
 
-reg[15:0] Adummy;
+wire [15:0] Adummy;
 
 assign Adummy = Ain << 1;
 

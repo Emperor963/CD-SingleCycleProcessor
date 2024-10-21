@@ -45,7 +45,7 @@ adder_4bit adder_01(
     .P(prop[0]),
     .G(gen[0]),
     .ovfl(ovfl4)
-)
+);
 
 assign carry[1] = gen[0] | (prop[0] & carry[0]);
 
