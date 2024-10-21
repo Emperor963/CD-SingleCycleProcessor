@@ -20,7 +20,7 @@ wire[3:0] gen;
 wire[3:0] prop;
 wire[15:0] tempSum;
 
-assign carry[0] = Cin;
+//assign carry[0] = Cin;
 wire ovfl4;
 
 adder_4bit adder1(
