@@ -11,7 +11,7 @@ module claAddSub(
     output ovfl
 ); 
 
-reg [15:0] B;
+wire [15:0] B;
 
 assign B =  Bin ^ {16{isSub}}; 
 
