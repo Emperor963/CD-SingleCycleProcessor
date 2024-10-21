@@ -36,7 +36,6 @@ adder_4bit adder1(
 //NOT WORK, REVERT BACK TO Cin FOR adder_1 TO BEING isSub WITH NO CARRY IN.
 
 
-
 adder_4bit adder2(
     .A(A[7:4]),
     .B(B[7:4]),
