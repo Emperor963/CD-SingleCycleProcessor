@@ -1,3 +1,3 @@
-moduel CLA_4bitm (
+moduel CLA_4bit(
     
 )
