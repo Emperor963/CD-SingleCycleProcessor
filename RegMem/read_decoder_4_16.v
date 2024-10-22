@@ -6,6 +6,6 @@ module read_decoder_4_16(
 wire [15:0] sample;
 assign sample = 16'h1;
 
-assign wordline = sample << reg_id;
+assign wordline = sample << reg_id; //NEED TO CHANGE THIS TO CONSTANT SHAMTS
 
 endmodule;

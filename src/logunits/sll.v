@@ -5,7 +5,7 @@ module sll(
     output[15:0] Aout
 );
 
-assign Aout = Ain << shamt;
+assign Aout = Ain << shamt; //CHANGE THIS TO CONSTANT AMOUNT SHIFTS
 
 
 endmodule

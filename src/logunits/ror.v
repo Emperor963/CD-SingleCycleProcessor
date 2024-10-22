@@ -9,6 +9,7 @@ wire [15:0] Adummy;
 
 assign Adummy = Ain << 1;
 
+//MAYBE CHANGE THIS TO BITWISE OR?
 assign Aout = {Adummy[shamt, 1],Ain[15:shamt]}; //Hooooly shit this is so smart
 
 

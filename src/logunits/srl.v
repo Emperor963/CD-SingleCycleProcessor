@@ -6,7 +6,7 @@ module srl(
 );
 
 
-assign Aout = Ain >> shamt;
+assign Aout = Ain >> shamt; //CHANGE THIS TO CONSTANT AMOUNT SHIFTS
 
 
 endmodule
