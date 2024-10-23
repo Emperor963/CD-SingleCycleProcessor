@@ -1,5 +1,5 @@
 
-module adder_1bit {
+module adder_1bit (
 
     input A,
     input B,
@@ -7,13 +7,11 @@ module adder_1bit {
 
     output Sum,
     output G,
-    output P }
+    output P )
     
-    wire G;
-    wire P;
 
-    assign G = (A & B) ? 1'b1:1'b0;
-    assign P = (A | B) ? 1'b1:1'b0;
+    assign G = (A & B);
+    assign P = (A | B);
 
     assign Sum = A ^ B ^ C;  
 
