@@ -1,11 +1,11 @@
 
 module adder_1bit {
 
-    input [3:0]A,
-    input [3:0]B,
+    input A,
+    input B,
     input  C,
 
-    output [3:0]Sum,
+    output Sum,
     output G,
     output P }
     
