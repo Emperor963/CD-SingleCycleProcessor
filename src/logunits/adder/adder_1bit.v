@@ -7,7 +7,7 @@ module adder_1bit (
 
     output Sum,
     output G,
-    output P )
+    output P );
     
 
     assign G = (A & B);
