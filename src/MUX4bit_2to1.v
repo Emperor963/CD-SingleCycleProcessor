@@ -1,4 +1,4 @@
-module 4bit_2to1MUX(
+module MUX4bit_2to1(
     input [3:0] sigA,
     input [3:0] sigB,
     input control,

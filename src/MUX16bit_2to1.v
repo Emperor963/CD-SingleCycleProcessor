@@ -1,4 +1,4 @@
-module 16bit_2to1MUX(
+module MUX16bit_2to1(
     input [15:0] sigA,
     input [15:0] sigB,
     input control,
