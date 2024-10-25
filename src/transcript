@@ -829,3 +829,184 @@ vlog bitman.v
 # 	bitman
 # End time: 15:21:01 on Oct 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
+# Compile of cpu_control.v failed with 1 errors.
+vlog cpu_control.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:10:14 on Oct 25,2024
+# vlog -reportprogress 300 cpu_control.v 
+# -- Compiling module cpu_control
+# ** Error: (vlog-13069) cpu_control.v(31): near "assign": syntax error, unexpected assign, expecting ';'.
+# End time: 17:10:14 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+# Compile of cpu_control.v failed with 68 errors.
+vlog cpu_control.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:10:58 on Oct 25,2024
+# vlog -reportprogress 300 cpu_control.v 
+# -- Compiling module cpu_control
+# ** Error: cpu_control.v(48): (vlog-2110) Illegal reference to net "result".
+# ** Error: cpu_control.v(48): (vlog-2110) Illegal reference to net "ALU".
+# ** Error: cpu_control.v(48): (vlog-2110) Illegal reference to net "MR".
+# ** Error: cpu_control.v(48): (vlog-2110) Illegal reference to net "PCSource".
+# ** Error: cpu_control.v(51): (vlog-2110) Illegal reference to net "result".
+# ** Error: cpu_control.v(51): (vlog-2110) Illegal reference to net "ALU".
+# ** Error: cpu_control.v(51): (vlog-2110) Illegal reference to net "MR".
+# ** Error: cpu_control.v(51): (vlog-2110) Illegal reference to net "PCSource".
+# ** Error: cpu_control.v(54): (vlog-2110) Illegal reference to net "result".
+# ** Error: cpu_control.v(54): (vlog-2110) Illegal reference to net "ALU".
+# ** Error: cpu_control.v(54): (vlog-2110) Illegal reference to net "MR".
+# ** Error: cpu_control.v(54): (vlog-2110) Illegal reference to net "PCSource".
+# ** Error: cpu_control.v(57): (vlog-2110) Illegal reference to net "result".
+# ** Error: cpu_control.v(57): (vlog-2110) Illegal reference to net "ALU".
+# ** Error: cpu_control.v(57): (vlog-2110) Illegal reference to net "MR".
+# ** Error: cpu_control.v(57): (vlog-2110) Illegal reference to net "PCSource".
+# ** Error: cpu_control.v(60): (vlog-2110) Illegal reference to net "result".
+# ** Error: cpu_control.v(60): (vlog-2110) Illegal reference to net "ALU".
+# ** Error: cpu_control.v(60): (vlog-2110) Illegal reference to net "MR".
+# ** Error: cpu_control.v(60): (vlog-2110) Illegal reference to net "PCSource".
+# ** Error: cpu_control.v(63): (vlog-2110) Illegal reference to net "result".
+# ** Error: cpu_control.v(63): (vlog-2110) Illegal reference to net "ALU".
+# ** Error: cpu_control.v(63): (vlog-2110) Illegal reference to net "MR".
+# ** Error: cpu_control.v(63): (vlog-2110) Illegal reference to net "PCSource".
+# ** Error: cpu_control.v(66): (vlog-2110) Illegal reference to net "result".
+# ** Error: cpu_control.v(66): (vlog-2110) Illegal reference to net "ALU".
+# ** Error: cpu_control.v(66): (vlog-2110) Illegal reference to net "MR".
+# ** Error: cpu_control.v(66): (vlog-2110) Illegal reference to net "PCSource".
+# ** Error: cpu_control.v(69): (vlog-2110) Illegal reference to net "result".
+# ** Error: cpu_control.v(69): (vlog-2110) Illegal reference to net "ALU".
+# ** Error: cpu_control.v(69): (vlog-2110) Illegal reference to net "MR".
+# ** Error: cpu_control.v(69): (vlog-2110) Illegal reference to net "PCSource".
+# ** Error: cpu_control.v(73): (vlog-2110) Illegal reference to net "result".
+# ** Error: cpu_control.v(73): (vlog-2110) Illegal reference to net "ALU".
+# ** Error: cpu_control.v(73): (vlog-2110) Illegal reference to net "MR".
+# ** Error: cpu_control.v(73): (vlog-2110) Illegal reference to net "PCSource".
+# ** Error: cpu_control.v(76): (vlog-2110) Illegal reference to net "result".
+# ** Error: cpu_control.v(76): (vlog-2110) Illegal reference to net "ALU".
+# ** Error: cpu_control.v(76): (vlog-2110) Illegal reference to net "MR".
+# ** Error: cpu_control.v(76): (vlog-2110) Illegal reference to net "PCSource".
+# ** Error: cpu_control.v(79): (vlog-2110) Illegal reference to net "result".
+# ** Error: cpu_control.v(79): (vlog-2110) Illegal reference to net "ALU".
+# ** Error: cpu_control.v(79): (vlog-2110) Illegal reference to net "MR".
+# ** Error: cpu_control.v(79): (vlog-2110) Illegal reference to net "PCSource".
+# ** Error: cpu_control.v(82): (vlog-2110) Illegal reference to net "result".
+# ** Error: cpu_control.v(82): (vlog-2110) Illegal reference to net "ALU".
+# ** Error: cpu_control.v(82): (vlog-2110) Illegal reference to net "MR".
+# ** Error: cpu_control.v(82): (vlog-2110) Illegal reference to net "PCSource".
+# ** Error: cpu_control.v(85): (vlog-2110) Illegal reference to net "result".
+# ** Error: cpu_control.v(85): (vlog-2110) Illegal reference to net "ALU".
+# ** Error: cpu_control.v(85): (vlog-2110) Illegal reference to net "MR".
+# ** Error: cpu_control.v(85): (vlog-2110) Illegal reference to net "PCSource".
+# ** Error: cpu_control.v(88): (vlog-2110) Illegal reference to net "result".
+# ** Error: cpu_control.v(88): (vlog-2110) Illegal reference to net "ALU".
+# ** Error: cpu_control.v(88): (vlog-2110) Illegal reference to net "MR".
+# ** Error: cpu_control.v(88): (vlog-2110) Illegal reference to net "PCSource".
+# ** Error: cpu_control.v(91): (vlog-2110) Illegal reference to net "result".
+# ** Error: cpu_control.v(91): (vlog-2110) Illegal reference to net "ALU".
+# ** Error: cpu_control.v(91): (vlog-2110) Illegal reference to net "MR".
+# ** Error: cpu_control.v(91): (vlog-2110) Illegal reference to net "PCSource".
+# ** Error: cpu_control.v(94): (vlog-2110) Illegal reference to net "result".
+# ** Error: cpu_control.v(94): (vlog-2110) Illegal reference to net "ALU".
+# ** Error: cpu_control.v(94): (vlog-2110) Illegal reference to net "MR".
+# ** Error: cpu_control.v(94): (vlog-2110) Illegal reference to net "PCSource".
+# ** Error: cpu_control.v(97): (vlog-2110) Illegal reference to net "result".
+# ** Error: cpu_control.v(98): (vlog-2110) Illegal reference to net "ALU".
+# ** Error: cpu_control.v(99): (vlog-2110) Illegal reference to net "MR".
+# ** Error: cpu_control.v(100): (vlog-2110) Illegal reference to net "PCSource".
+# End time: 17:10:58 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 68, Warnings: 0
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+vlog ALU.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:14:08 on Oct 25,2024
+# vlog -reportprogress 300 ALU.v 
+# ** Error: (vlog-7) Failed to open design unit file "ALU.v" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 17:14:08 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+# Compile of ALU.v failed with 5 errors.
+vlog ALU.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:21:00 on Oct 25,2024
+# vlog -reportprogress 300 ALU.v 
+# -- Compiling module ALU
+# ** Error: ALU.v(16): (vlog-13282) 'addr' already declared in this scope.
+# ** Error: (vlog-13069) ALU.v(20): near "shamt": syntax error, unexpected IDENTIFIER, expecting .* or '.'.
+# ** Error: (vlog-13069) ALU.v(21): near "shamt": syntax error, unexpected IDENTIFIER, expecting .* or '.'.
+# ** Error: (vlog-13069) ALU.v(22): near ".": syntax error, unexpected '.'.
+# ** Error: (vlog-13069) ALU.v(63): near "1": syntax error, unexpected INTEGER NUMBER, expecting ';' or ','.
+# End time: 17:21:00 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 5, Warnings: 0
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+# Compile of cpu_control.v was successful.
+vlog ALU.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:31:01 on Oct 25,2024
+# vlog -reportprogress 300 ALU.v 
+# -- Compiling module ALU
+# ** Error: ALU.v(16): (vlog-13282) 'addr' already declared in this scope.
+# ** Error: (vlog-13069) ALU.v(20): near "shamt": syntax error, unexpected IDENTIFIER, expecting .* or '.'.
+# ** Error: (vlog-13069) ALU.v(21): near "shamt": syntax error, unexpected IDENTIFIER, expecting .* or '.'.
+# ** Error: (vlog-13069) ALU.v(22): near ".": syntax error, unexpected '.'.
+# ** Error: (vlog-13069) ALU.v(63): near "1": syntax error, unexpected INTEGER NUMBER, expecting ';' or ','.
+# End time: 17:31:01 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 5, Warnings: 0
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+vlog ALU.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:31:48 on Oct 25,2024
+# vlog -reportprogress 300 ALU.v 
+# -- Compiling module ALU
+# ** Error: (vlog-13069) ALU.v(20): near "shamt": syntax error, unexpected IDENTIFIER, expecting .* or '.'.
+# ** Error: (vlog-13069) ALU.v(21): near "shamt": syntax error, unexpected IDENTIFIER, expecting .* or '.'.
+# ** Error: (vlog-13069) ALU.v(22): near ".": syntax error, unexpected '.'.
+# End time: 17:31:48 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+# Compile of ALU.v failed with 1 errors.
+vlog ALU.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:34:39 on Oct 25,2024
+# vlog -reportprogress 300 ALU.v 
+# -- Compiling module ALU
+# ** Error: ALU.v(53): (vlog-2730) Undefined variable: 'srl0'.
+# End time: 17:34:39 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+# Compile of ALU.v was successful.
+# Compile of bitman.v was successful.
+# Compile of pc_control.v failed with 9 errors.
+vlog pc_control.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:37:55 on Oct 25,2024
+# vlog -reportprogress 300 pc_control.v 
+# -- Compiling module pc_control
+# ** Error: pc_control.v(34): (vlog-2110) Illegal reference to net "out".
+# ** Error: pc_control.v(36): (vlog-2110) Illegal reference to net "out".
+# ** Error: pc_control.v(38): (vlog-2110) Illegal reference to net "out".
+# ** Error: pc_control.v(40): (vlog-2110) Illegal reference to net "out".
+# ** Error: pc_control.v(42): (vlog-2110) Illegal reference to net "out".
+# ** Error: pc_control.v(44): (vlog-2110) Illegal reference to net "out".
+# ** Error: pc_control.v(46): (vlog-2110) Illegal reference to net "out".
+# ** Error: pc_control.v(48): (vlog-2110) Illegal reference to net "out".
+# ** Error: pc_control.v(51): (vlog-2110) Illegal reference to net "out".
+# End time: 17:37:55 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 9, Warnings: 0
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+# Compile of pc_control.v was successful.
+vlog tb_Mux.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:40:19 on Oct 25,2024
+# vlog -reportprogress 300 tb_Mux.v 
+# -- Compiling module check
+# -- Compiling module tb_Mux
+# ** Error: tb_Mux.v(32): Checker 'check' not found.  Instantiation 'test1' must be of a visible checker.
+# 
+# ** Error: tb_Mux.v(34): Checker 'check' not found.  Instantiation 'test2' must be of a visible checker.
+# 
+# ** Error: tb_Mux.v(32): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+# ** Error: tb_Mux.v(34): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+# End time: 17:40:19 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
