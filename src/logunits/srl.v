@@ -13,6 +13,6 @@ assign At2 = shamt[1] ? (At1 >> 2) : At1;
 assign At4 = shamt[2] ? (At2 >> 4) : At2;
 assign At8 = shamt[3] ? (At4 >> 8) : At4;
 
-assign Aout = shamt[4] ? 16'b0 ; At8;
+assign Aout = shamt[4] ? 16'b0 : At8;
 
 endmodule
