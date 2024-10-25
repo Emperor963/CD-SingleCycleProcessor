@@ -1,7 +1,7 @@
 module flag_reg(
     input clk, 
     input rst, 
-    input [2:0] wr
+    input [2:0] wr,
     input [2:0] in, 
     output [2:0] out,
 );
