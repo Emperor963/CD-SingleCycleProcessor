@@ -7,8 +7,10 @@ module pc_control(
     output [15:0] pc_out
 );
 
-wire [15:0] SEXTImm = {{7{imm[8]}}, imm[8:0]};
-wire [15:0] targetAddr = SEXTimm << 1;
+wire [15:0] SEXTImm;
+assign SEXTImm = {{7{imm[8]}}, imm[8:0]};
+wire [15:0] targetAddr; 
+assign targetAddr = SEXTImm << 1;
 
 wire N = FLAG[0];
 wire Z = FLAG[1];
