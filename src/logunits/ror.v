@@ -10,7 +10,7 @@ wire [15:0] Adummy;
 assign Adummy = Ain << 1;
 
 //MAYBE CHANGE THIS TO BITWISE OR?
-assign Aout = {Adummy[shamt, 1],Ain[15:shamt]}; //Hooooly shit this is so smart
+assign Aout = {Adummy[shamt,1],Ain[15:shamt]}; //Hooooly shit this is so smart
 
 
 //Basically we're concatenating the 15th to shamt'th bit in the lower significant bits,
@@ -22,3 +22,7 @@ assign Aout = {Adummy[shamt, 1],Ain[15:shamt]}; //Hooooly shit this is so smart
 //I can not stress how proud I am of this ingenious design.
 
 endmodule
+
+
+
+
