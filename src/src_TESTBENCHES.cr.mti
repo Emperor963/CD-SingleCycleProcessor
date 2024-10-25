@@ -1,28 +1,34 @@
-C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/MUX4bit_2to1.v {1 {vlog -work work -stats=none C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/MUX4bit_2to1.v
+C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/flag_reg.v {1 {vlog -work work -stats=none C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/flag_reg.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module MUX4bit_2to1
+-- Compiling module flag_reg
 
 Top level modules:
-	MUX4bit_2to1
+	flag_reg
 
-} {} {}} C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/pc_control.v {0 {vlog -work work -stats=none C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/pc_control.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module pc_control
-** Error: (vlog-13069) C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/pc_control.v(4): near "]": syntax error, unexpected ']'.
-
-} {4.0 5.0} {}} C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/MUX16bit_4to1.v {1 {vlog -work work -stats=none C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/MUX16bit_4to1.v
+} {} {}} C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/MUX16bit_4to1.v {1 {vlog -work work -stats=none C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/MUX16bit_4to1.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module MUX16bit_4to1
 
 Top level modules:
 	MUX16bit_4to1
 
-} {} {}} C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/flag_reg.v {1 {vlog -work work -stats=none C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/flag_reg.v
+} {} {}} C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_Mux.v {0 {vlog -work work -stats=none C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_Mux.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module flag_reg
+-- Compiling module check
+-- Compiling module tb_Mux
+** Error: C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_Mux.v(32): Checker 'check' not found.  Instantiation 'test1' must be of a visible checker.
+
+** Error: C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_Mux.v(34): Checker 'check' not found.  Instantiation 'test2' must be of a visible checker.
+
+** Error: C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_Mux.v(32): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+** Error: C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_Mux.v(34): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+
+} {5.0 6.0 7.0 8.0 9.0 11.0} {}} C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/cpu_control.v {1 {vlog -work work -stats=none C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/cpu_control.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module cpu_control
 
 Top level modules:
-	flag_reg
+	cpu_control
 
 } {} {}} C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/SignExtend8bit.v {1 {vlog -work work -stats=none C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/SignExtend8bit.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -31,19 +37,46 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	SignExtend8bit
 
-} {} {}} C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/SignExtend4bit.v {1 {vlog -work work -stats=none C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/SignExtend4bit.v
+} {} {}} C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_SignExtend4bit.v {1 {vlog -work work -stats=none C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_SignExtend4bit.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module SignExtend4bit
+-- Compiling module tb_SignExtend4bit
 
 Top level modules:
-	SignExtend4bit
+	tb_SignExtend4bit
+
+} {} {}} C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/MUX4bit_2to1.v {1 {vlog -work work -stats=none C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/MUX4bit_2to1.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module MUX4bit_2to1
+
+Top level modules:
+	MUX4bit_2to1
+
+} {} {}} C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/bitman.v {0 {vlog -work work -stats=none C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/bitman.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module bitman
+** Error: (vlog-13069) C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/bitman.v(13): near "[": syntax error, unexpected '['.
+
+} {4.0 5.0} {}} C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_SignExtend8bit.v {2 {vlog -work work -stats=none C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_SignExtend8bit.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module tb_SignExtend8bit
+** Warning: C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_SignExtend8bit.v(24): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+
+Top level modules:
+	tb_SignExtend8bit
 
 } {} {}} C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/cpu.v {0 {vlog -work work -stats=none C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/cpu.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module cpu
 ** Error: (vlog-13069) C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/cpu.v(12): near "wire": syntax error, unexpected wire, expecting ';'.
 
-} {4.0 5.0} {}} C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/MUX16bit_2to1.v {1 {vlog -work work -stats=none C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/MUX16bit_2to1.v
+} {4.0 5.0} {}} C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/SignExtend4bit.v {1 {vlog -work work -stats=none C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/SignExtend4bit.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module SignExtend4bit
+
+Top level modules:
+	SignExtend4bit
+
+} {} {}} C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/MUX16bit_2to1.v {1 {vlog -work work -stats=none C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/MUX16bit_2to1.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module MUX16bit_2to1
 
