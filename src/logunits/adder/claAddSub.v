@@ -6,30 +6,36 @@ module claAddSub(
     input Cin,
     input isSub,
 
-    output[15:0] S,
+    output [15:0] S,
     output Cout,
     output ovfl
 ); 
 
 wire [15:0] B;
+wire [3:0]dummy;
+wire [3:0]dummy2;
 
 assign B =  Bin ^ {16{isSub}}; 
+
+
 
 wire[3:0] LAcarry;
 wire[3:0] gen;
 wire[3:0] prop;
-wire[15:0] tempSum;
+//wire[15:0] tempSum;
 
-
-assign S = {tempSum[15:1], tempSum[0]|isSub};
+//assign Cin = isSub;
+//assign S = {tempSum[15:1], tempSum[0]|isSub};
 
 adder_4bit adder1(
     .A(A[3:0]),
     .B(B[3:0]),
-    .Cin(Cin),
+    .C(isSub),
     .Sum(S[3:0]),
+    .Cout(dummy2[0]),
     .P(prop[0]),
     .G(gen[0]),
+    .ovfl(dummy[0])
 );
 
 //THIS ADDER IS TO ADD THE ISSUB BIT TO NEGATION OF B IF ISSUB IS 1. IF THIS DOES
@@ -39,37 +45,43 @@ adder_4bit adder1(
 adder_4bit adder2(
     .A(A[7:4]),
     .B(B[7:4]),
-    .Cin(LAcarry[0]),
+    .C(LAcarry[0]),
     .Sum(S[7:4]),
+    .Cout(dummy2[1]),
     .P(prop[1]),
     .G(gen[1]),
+    .ovfl(dummy[1])
 );
 
 
 adder_4bit adder3(
     .A(A[11:8]),
     .B(B[11:8]),
-    .Cin(LAcarry[1]),
+    .C(LAcarry[1]),
     .Sum(S[11:8]),
+    .Cout(dummy[2]),
     .P(prop[2]),
     .G(gen[2]),
+    .ovfl(dummy[2])
 );
 
 
 adder_4bit adder4(
     .A(A[15:12]),
     .B(B[15:12]),
-    .Cin(LAcarry[2]),
+    .C(LAcarry[2]),
     .Sum(S[15:12]),
+    .Cout(dummy2[3]),
     .P(prop[3]),
     .G(gen[3]),
+    .ovfl(dummy[3])
 );
 
-CLA cla1 (.G(gen),.P(prop), .Cin(Cin), .Cout(LAcarry));
+CLA cla1 (.G(gen),.P(prop), .Cin(isSub), .Cout(LAcarry));
 
-assign ovfl = (!A[15] & !B[15] & tempSum[15]) | (A[15] & B[15] & !tempSum[15]);
+assign ovfl = (!A[15] & !B[15] & S[15]) | (A[15] & B[15] & !S[15]);
 
 assign Cout = LAcarry[3];
 
 
-endmodule;
+endmodule
