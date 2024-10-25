@@ -45,7 +45,7 @@ always @(*) begin
     3'b110:
         out = V ? target_address : PC_update;
     3'b111:
-        ou = target_address;
+        out = target_address;
 
     default:
         out = PC_update;
