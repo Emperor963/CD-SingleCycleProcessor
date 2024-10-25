@@ -17,9 +17,9 @@ claAddSub subtrctr(.A(In1), .Bin(In2), .Cin(1'b0), .isSub(1'b1), .S(sum), .Cout(
 paddsb padder(.A(In1), .B(In2), .Sum(pad));
 red reduction(.A(In1), .B(In2), .Sum(red));
 ror rotate(.Ain(In1), .shamt(In2[3:0]), .Aout(ror0));
-sll shiftL(.Ain(In1), shamt(In2[3:0]), .Aout(sll0));
-srl shiftR(.Ain(In1), shamt(In2[3:0]), .Aout(slr0));
-xor xorC(.A(In1), .B(In2), .X(zor));
+sll shiftL(.Ain(In1), .shamt(In2[3:0]), .Aout(sll0));
+srl shiftR(.Ain(In1), .shamt(In2[3:0]), .Aout(slr0));
+xor_module xorC(.A(In1), .B(In2), .X(zor));
 
 wire[2:0] t1, t2, t3, t4, t5, t6, t7, t8;
 
