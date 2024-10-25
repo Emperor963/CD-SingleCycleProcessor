@@ -1,0 +1,159 @@
+# Compile of cpu.v failed with 1 errors.
+# Compile of flag_reg.v failed with 1 errors.
+# Compile of MUX4bit_2to1.v was successful.
+# Compile of MUX16bit_2to1.v was successful.
+# Compile of MUX16bit_4to1.v failed with 1 errors.
+# Compile of pc_control.v failed with 1 errors.
+# Compile of SignExtend4bit.v failed with 1 errors.
+# Compile of SignExtend8bit.v failed with 1 errors.
+# 8 compiles, 6 failed with 6 errors.
+vlog MUX16bit_4to1.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:07:29 on Oct 25,2024
+# vlog -reportprogress 300 MUX16bit_4to1.v 
+# ** Error: (vlog-13069) MUX16bit_4to1.v(1): near "16": syntax error, unexpected INTEGER NUMBER.
+# End time: 13:07:29 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+vlog MUX16bit_4to1.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:08:26 on Oct 25,2024
+# vlog -reportprogress 300 MUX16bit_4to1.v 
+# ** Error: (vlog-13069) MUX16bit_4to1.v(1): near "16": syntax error, unexpected INTEGER NUMBER.
+# End time: 13:08:26 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+vlog MUX16bit_4to1.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:08:51 on Oct 25,2024
+# vlog -reportprogress 300 MUX16bit_4to1.v 
+# ** Error: (vlog-13069) MUX16bit_4to1.v(1): near "16": syntax error, unexpected INTEGER NUMBER.
+# End time: 13:08:51 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+# Compile of MUX16bit_4to1.v failed with 1 errors.
+vlog MUX4bit_2to1.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:11:13 on Oct 25,2024
+# vlog -reportprogress 300 MUX4bit_2to1.v 
+# -- Compiling module MUX4bit_2to1
+# 
+# Top level modules:
+# 	MUX4bit_2to1
+# End time: 13:11:13 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Compile of MUX16bit_4to1.v failed with 1 errors.
+vlog MUX16bit_4to1.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:11:48 on Oct 25,2024
+# vlog -reportprogress 300 MUX16bit_4to1.v 
+# -- Compiling module MUX16bit_4to1
+# ** Error: (vlog-13069) MUX16bit_4to1.v(5): near ";": syntax error, unexpected ';', expecting ')'.
+# End time: 13:11:48 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+# Compile of MUX16bit_4to1.v failed with 1 errors.
+vlog MUX16bit_4to1.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:12:37 on Oct 25,2024
+# vlog -reportprogress 300 MUX16bit_4to1.v 
+# -- Compiling module MUX16bit_4to1
+# ** Error: (vlog-13069) MUX16bit_4to1.v(23): near ";": syntax error, unexpected ';'.
+# End time: 13:12:37 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+# Compile of MUX16bit_4to1.v was successful.
+vlog SignExtend4bit.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:16:44 on Oct 25,2024
+# vlog -reportprogress 300 SignExtend4bit.v 
+# -- Compiling module SignExtend4bit
+# ** Error: (vlog-13069) SignExtend4bit.v(6): near "assign": syntax error, unexpected assign, expecting ';'.
+# End time: 13:16:44 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+# Compile of SignExtend4bit.v was successful.
+# Compile of SignExtend8bit.v was successful.
+# Compile of tb_SignExtend4bit.v was successful.
+# Load canceled
+vlog tb_SignExtend4bit.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:29:14 on Oct 25,2024
+# vlog -reportprogress 300 tb_SignExtend4bit.v 
+# -- Compiling module sign_extend_tb
+# 
+# Top level modules:
+# 	sign_extend_tb
+# End time: 13:29:14 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -gui sign_extend_tb
+# vsim -gui sign_extend_tb 
+# Start time: 13:31:07 on Oct 25,2024
+# Loading work.sign_extend_tb
+# ** Error: (vsim-3033) Instantiation of 'sign_extend' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /sign_extend_tb File: tb_SignExtend4bit.v Line: 10
+#         Searched libraries:
+#             C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/work
+# Error loading design
+# End time: 13:31:07 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 13
+vsim -gui sign_extend_tb
+# vsim -gui sign_extend_tb 
+# Start time: 13:31:35 on Oct 25,2024
+# Loading work.sign_extend_tb
+# ** Error: (vsim-3033) Instantiation of 'sign_extend' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /sign_extend_tb File: tb_SignExtend4bit.v Line: 10
+#         Searched libraries:
+#             C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/work
+# Error loading design
+# End time: 13:31:35 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+vlog tb_SignExtend4bit.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:31:52 on Oct 25,2024
+# vlog -reportprogress 300 tb_SignExtend4bit.v 
+# -- Compiling module sign_extend_tb
+# 
+# Top level modules:
+# 	sign_extend_tb
+# End time: 13:31:52 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog tb_SignExtend4bit.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:32:12 on Oct 25,2024
+# vlog -reportprogress 300 tb_SignExtend4bit.v 
+# -- Compiling module sign_extend_tb
+# 
+# Top level modules:
+# 	sign_extend_tb
+# End time: 13:32:12 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -gui sign_extend_tb
+# vsim -gui sign_extend_tb 
+# Start time: 13:32:25 on Oct 25,2024
+# Loading work.sign_extend_tb
+# ** Error: (vsim-3033) Instantiation of 'sign_extend' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /sign_extend_tb File: tb_SignExtend4bit.v Line: 10
+#         Searched libraries:
+#             C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/work
+# Error loading design
+# End time: 13:32:26 on Oct 25,2024, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1
+vlog flag_reg.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:32:52 on Oct 25,2024
+# vlog -reportprogress 300 flag_reg.v 
+# -- Compiling module flag_reg
+# ** Error: (vlog-13069) flag_reg.v(5): near "input": syntax error, unexpected input, expecting ')'.
+# End time: 13:32:52 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+vlog flag_reg.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:33:44 on Oct 25,2024
+# vlog -reportprogress 300 flag_reg.v 
+# -- Compiling module flag_reg
+# ** Error: (vlog-13069) flag_reg.v(5): near "input": syntax error, unexpected input, expecting ')'.
+# End time: 13:33:44 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
