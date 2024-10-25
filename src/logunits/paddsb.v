@@ -5,39 +5,32 @@ module paddsb (
     output [15:0] Sum
 );
 
-wire [3:0]A_a; //15-12
-wire [3:0]A_b; //11-8
-wire [3:0]A_c; //7-4
-wire [3:0]A_d; //3-0
 
-wire [3:0]B_a; //15-12
-wire [3:0]B_b; //11-8
-wire [3:0]B_c; //7-4
-wire [3:0]B_d; //3-0
+wire [15:0]tempSum;
 
 wire [3:0]ovfl;
 wire [3:0]Cout;
 
 wire dummy1, dummy2;
 
-adder_4bit add0 (.A(A_a), .B(B_a), .C(1'b0), .Sum(Sum[15:12]), .Cout(Cout[0]), .P(dummy1), .G(dummy2), .ovfl(ovfl[3]));
-adder_4bit add1 (.A(A_b), .B(B_b), .C(1'b0), .Sum(Sum[11:8]), .Cout(Cout[1]), .P(dummy1), .G(dummy2), .ovfl(ovfl[2]));
-adder_4bit add2 (.A(A_c), .B(B_c), .C(1'b0), .Sum(Sum[7:4]), .Cout(Cout[2]), .P(dummy1), .G(dummy2), .ovfl(ovfl[1]));
-adder_4bit add3 (.A(A_d), .B(B_d), .C(1'b0), .Sum(Sum[3:0]), .Cout(Cout[3]), .P(dummy1), .G(dummy2), .ovfl(ovfl[0]));
+adder_4bit add0 (.A(A[15:12]), .B(B[15:12]), .C(1'b0), .Sum(tempSum[15:12]), .Cout(Cout[0]), .P(dummy1), .G(dummy2), .ovfl(ovfl[3]));
+adder_4bit add1 (.A(A[11:8]), .B(B[11:8]), .C(1'b0), .Sum(tempSum[11:8]), .Cout(Cout[1]), .P(dummy1), .G(dummy2), .ovfl(ovfl[2]));
+adder_4bit add2 (.A(A[7:4]), .B(B[7:4]), .C(1'b0), .Sum(tempSum[7:4]), .Cout(Cout[2]), .P(dummy1), .G(dummy2), .ovfl(ovfl[1]));
+adder_4bit add3 (.A(A[3:0]), .B(B[3:0]), .C(1'b0), .Sum(tempSum[3:0]), .Cout(Cout[3]), .P(dummy1), .G(dummy2), .ovfl(ovfl[0]));
 
 
 
-assign  Sum[15:12] = (Sum[15] & ovfl[3]) ? 4'b1000:
-              (!Sum[15] & ovfl[3] ) ? 4'b0111:Sum[15:12];
+assign  Sum[15:12] = (tempSum[15] & ovfl[3]) ? 4'b1000:
+              (!tempSum[15] & ovfl[3] ) ? 4'b0111:tempSum[15:12];
 
-assign  Sum[11:8] = (Sum[11] & ovfl[2]) ? 4'b1000:
-              (!Sum[11] & ovfl[2]) ? 4'b0111:Sum[11:8];
+assign  Sum[11:8] = (tempSum[11] & ovfl[2]) ? 4'b1000:
+              (!tempSum[11] & ovfl[2]) ? 4'b0111:tempSum[11:8];
 
-assign  Sum[7:4] = (Sum[7] & ovfl[1]) ? 4'b1000:
-              (!Sum[7] & ovfl[1]) ? 4'b0111:Sum[7:4];
+assign  Sum[7:4] = (tempSum[7] & ovfl[1]) ? 4'b1000:
+              (!tempSum[7] & ovfl[1]) ? 4'b0111:tempSum[7:4];
 
-assign  Sum[3:0] = (Sum[3] & ovfl[0]) ? 4'b1000:
-              (!Sum[3] & ovfl[0]) ? 4'b0111:Sum[3:0];
+assign  Sum[3:0] = (tempSum[3] & ovfl[0]) ? 4'b1000:
+              (!tempSum[3] & ovfl[0]) ? 4'b0111:tempSum[3:0];
 
 
 endmodule 
