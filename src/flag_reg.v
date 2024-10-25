@@ -3,7 +3,7 @@ module flag_reg(
     input rst, 
     input [2:0] wr,
     input [2:0] in, 
-    output [2:0] out,
+    output [2:0] out
 );
 
 dff u1(.q(out[0]), .d(in[0]), .wen(wr[0]), .clk(clk), .rst(rst));
