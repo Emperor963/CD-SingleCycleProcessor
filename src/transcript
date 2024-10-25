@@ -157,3 +157,675 @@ vlog flag_reg.v
 # End time: 13:33:44 on Oct 25,2024, Elapsed time: 0:00:00
 # Errors: 1, Warnings: 0
 # C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+# Compile of flag_reg.v failed with 1 errors.
+vlog lag_reg.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:37:27 on Oct 25,2024
+# vlog -reportprogress 300 lag_reg.v 
+# ** Error: (vlog-7) Failed to open design unit file "lag_reg.v" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 13:37:27 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+vlog flag_reg.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:38:21 on Oct 25,2024
+# vlog -reportprogress 300 flag_reg.v 
+# -- Compiling module flag_reg
+# ** Error: (vlog-13038) flag_reg.v(7): near ")": Missing port in ansi port list.
+# End time: 13:38:21 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+vlog flag_reg.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:40:33 on Oct 25,2024
+# vlog -reportprogress 300 flag_reg.v 
+# -- Compiling module flag_reg
+# 
+# Top level modules:
+# 	flag_reg
+# End time: 13:40:33 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Compile of flag_reg.v was successful.
+vlog tb_SignExtend4bit.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:41:47 on Oct 25,2024
+# vlog -reportprogress 300 tb_SignExtend4bit.v 
+# -- Compiling module sign_extend_tb
+# 
+# Top level modules:
+# 	sign_extend_tb
+# End time: 13:41:47 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -gui sign_extend_tb
+# vsim -gui sign_extend_tb 
+# Start time: 13:42:17 on Oct 25,2024
+# Loading work.sign_extend_tb
+# ** Error: (vsim-3033) Instantiation of 'sign_extend' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /sign_extend_tb File: tb_SignExtend4bit.v Line: 10
+#         Searched libraries:
+#             C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/work
+# Error loading design
+# End time: 13:42:17 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 3
+vlog tb_SignExtedn4bit.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:43:04 on Oct 25,2024
+# vlog -reportprogress 300 tb_SignExtedn4bit.v 
+# ** Error: (vlog-7) Failed to open design unit file "tb_SignExtedn4bit.v" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 13:43:04 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+vlog tb_SignExtend4bit.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:43:23 on Oct 25,2024
+# vlog -reportprogress 300 tb_SignExtend4bit.v 
+# -- Compiling module SignExtend4bit
+# 
+# Top level modules:
+# 	SignExtend4bit
+# End time: 13:43:23 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog tb_SignExtend4bit.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:43:54 on Oct 25,2024
+# vlog -reportprogress 300 tb_SignExtend4bit.v 
+# -- Compiling module tb_SignExtend4bit
+# 
+# Top level modules:
+# 	tb_SignExtend4bit
+# End time: 13:43:54 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim tb_SignExtedn4bit
+# vsim tb_SignExtedn4bit 
+# Start time: 13:44:04 on Oct 25,2024
+# ** Error: (vsim-3170) Could not find 'tb_SignExtedn4bit'.
+#         Searched libraries:
+#             C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/work
+# Error loading design
+# End time: 13:44:05 on Oct 25,2024, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1
+vsim tb_SignExtend4bit
+# vsim tb_SignExtend4bit 
+# Start time: 13:44:17 on Oct 25,2024
+# Loading work.tb_SignExtend4bit
+# ** Error: (vsim-3033) Instantiation of 'sign_extend' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_SignExtend4bit File: tb_SignExtend4bit.v Line: 10
+#         Searched libraries:
+#             C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/work
+# Error loading design
+# End time: 13:44:17 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+# Compile of tb_SignExtend4bit.v was successful.
+vsim tb_SignExtend4bit
+# vsim tb_SignExtend4bit 
+# Start time: 13:44:43 on Oct 25,2024
+# Loading work.tb_SignExtend4bit
+# ** Error: (vsim-3033) Instantiation of 'sign_extend' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_SignExtend4bit File: C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_SignExtend4bit.v Line: 10
+#         Searched libraries:
+#             C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/work
+# Error loading design
+# End time: 13:44:44 on Oct 25,2024, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 2
+# Compile of tb_SignExtend4bit.v was successful.
+vsim tb_SignExtend4bit
+# vsim tb_SignExtend4bit 
+# Start time: 13:45:48 on Oct 25,2024
+# Loading work.tb_SignExtend4bit
+# Loading work.SignExtend4bit
+# ** Error: (vsim-3033) Instantiation of 'sign_extend' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_SignExtend4bit/uut File: tb_SignExtend4bit.v Line: 10
+#         Searched libraries:
+#             C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/work
+# Error loading design
+# End time: 13:45:48 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 2
+# Compile of tb_SignExtend4bit.v was successful.
+vsim tb_SignExtend4bit
+# vsim tb_SignExtend4bit 
+# Start time: 13:47:06 on Oct 25,2024
+# Loading work.tb_SignExtend4bit
+# Loading work.SignExtend4bit
+# ** Error: (vsim-3033) Instantiation of 'sign_extend' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_SignExtend4bit/uut File: tb_SignExtend4bit.v Line: 10
+#         Searched libraries:
+#             C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/work
+# Error loading design
+# End time: 13:47:06 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 2
+# Compile of cpu.v failed with 1 errors.
+# Compile of flag_reg.v was successful.
+# Compile of MUX4bit_2to1.v was successful.
+# Compile of MUX16bit_2to1.v was successful.
+# Compile of MUX16bit_4to1.v was successful.
+# Compile of pc_control.v failed with 1 errors.
+# Compile of SignExtend4bit.v was successful.
+# Compile of SignExtend8bit.v was successful.
+# Compile of tb_SignExtend4bit.v was successful.
+# 9 compiles, 2 failed with 2 errors.
+vsim tb_SignExtend4bit
+# vsim tb_SignExtend4bit 
+# Start time: 13:48:06 on Oct 25,2024
+# Loading work.tb_SignExtend4bit
+# Loading work.SignExtend4bit
+# ** Error: (vsim-3063) Port 'in' not found in the connected module (1st connection).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_SignExtend4bit/uut File: C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_SignExtend4bit.v Line: 10
+# ** Error: (vsim-3063) Port 'out' not found in the connected module (2nd connection).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_SignExtend4bit/uut File: C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_SignExtend4bit.v Line: 10
+# Error loading design
+# End time: 13:48:06 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 2
+# Compile of tb_SignExtend4bit.v failed with 6 errors.
+# Compile of tb_SignExtend4bit.v failed with 6 errors.
+# Compile of tb_SignExtend4bit.v failed with 1 errors.
+vlog tb_SignExtend4bit.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:49:58 on Oct 25,2024
+# vlog -reportprogress 300 tb_SignExtend4bit.v 
+# -- Compiling module tb_SignExtend4bit
+# ** Error: tb_SignExtend4bit.v(21): (vlog-2730) Undefined variable: 'in'.
+# End time: 13:49:58 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+# Compile of tb_SignExtend4bit.v failed with 1 errors.
+vlog tb_SignExtedn4bit
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:56:01 on Oct 25,2024
+# vlog -reportprogress 300 tb_SignExtedn4bit 
+# ** Error: (vlog-7) Failed to open design unit file "tb_SignExtedn4bit" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 13:56:01 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+# Compile of tb_SignExtend4bit.v failed with 1 errors.
+# Compile of tb_SignExtend4bit.v failed with 1 errors.
+# Compile of tb_SignExtend4bit.v failed with 1 errors.
+# Compile of tb_SignExtend4bit.v failed with 1 errors.
+# Compile of tb_SignExtend4bit.v failed with 1 errors.
+vlog tb_SignExtend4bit.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:00:52 on Oct 25,2024
+# vlog -reportprogress 300 tb_SignExtend4bit.v 
+# -- Compiling module tb_SignExtend4bit
+# ** Error: tb_SignExtend4bit.v(21): (vlog-2730) Undefined variable: 'in'.
+# End time: 14:00:53 on Oct 25,2024, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+# Compile of tb_SignExtend4bit.v was successful.
+vsim tb_SignExtend4bit
+# vsim tb_SignExtend4bit 
+# Start time: 14:01:49 on Oct 25,2024
+# Loading work.tb_SignExtend4bit
+# Loading work.SignExtend4bit
+# ** Error: (vsim-3043) Unresolved reference to 'A'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_SignExtend4bit File: C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_SignExtend4bit.v Line: 18
+# ** Error: (vsim-3043) Unresolved reference to 'B'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_SignExtend4bit File: C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_SignExtend4bit.v Line: 18
+# Error loading design
+# End time: 14:01:49 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 13
+# Compile of tb_SignExtend4bit.v was successful.
+vsim tb_SignExtend4bit
+# vsim tb_SignExtend4bit 
+# Start time: 14:03:17 on Oct 25,2024
+# Loading work.tb_SignExtend4bit
+# Loading work.SignExtend4bit
+run -all
+# Time: 0, in: 1111 (65535), out: 1111 (65535)
+# Time: 10, in: 0000 (0), out: 0000 (0)
+# Time: 30, in: 1111 (65535), out: 1111 (65535)
+# Time: 40, in: 0000 (0), out: 0000 (0)
+# Time: 50, in: 1111 (65535), out: 1111 (65535)
+# ** Note: $finish    : C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_SignExtend4bit.v(29)
+#    Time: 60 ps  Iteration: 0  Instance: /tb_SignExtend4bit
+# 1
+# Break in Module tb_SignExtend4bit at C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_SignExtend4bit.v line 29
+# Compile of tb_SignExtend4bit.v was successful.
+run -all
+vsim tb_SignExtend4bit
+# End time: 14:05:17 on Oct 25,2024, Elapsed time: 0:02:00
+# Errors: 0, Warnings: 3
+# vsim tb_SignExtend4bit 
+# Start time: 14:05:17 on Oct 25,2024
+# Loading work.tb_SignExtend4bit
+# Loading work.SignExtend4bit
+run -all
+# Time: 0, in: 1111, out: 1111111111111111
+# Time: 10, in: 0000, out: 0000000000000000
+# Time: 30, in: 1111, out: 1111111111111111
+# Time: 40, in: 0000, out: 0000000000000000
+# Time: 50, in: 1111, out: 1111111111111111
+# ** Note: $finish    : C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_SignExtend4bit.v(29)
+#    Time: 60 ps  Iteration: 0  Instance: /tb_SignExtend4bit
+# 1
+# Break in Module tb_SignExtend4bit at C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_SignExtend4bit.v line 29
+# Compile of tb_SignExtend4bit.v was successful.
+vsim tb_SignExtend4bit
+# End time: 14:06:49 on Oct 25,2024, Elapsed time: 0:01:32
+# Errors: 0, Warnings: 2
+# vsim tb_SignExtend4bit 
+# Start time: 14:06:49 on Oct 25,2024
+# Loading work.tb_SignExtend4bit
+# Loading work.SignExtend4bit
+run -all
+# Time: 0, in: 0111, out: 0000000000000111
+# Time: 10, in: 1000, out: 1111111111111000
+# Time: 20, in: 0010, out: 0000000000000010
+# Time: 30, in: 0111, out: 0000000000000111
+# Time: 40, in: 0000, out: 0000000000000000
+# Time: 50, in: 1111, out: 1111111111111111
+# ** Note: $finish    : C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_SignExtend4bit.v(29)
+#    Time: 60 ps  Iteration: 0  Instance: /tb_SignExtend4bit
+# 1
+# Break in Module tb_SignExtend4bit at C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_SignExtend4bit.v line 29
+# Compile of tb_SignExtend8bit.v was successful with warnings.
+vsim tb_SignExtend8bit
+# End time: 14:11:53 on Oct 25,2024, Elapsed time: 0:05:04
+# Errors: 0, Warnings: 3
+# vsim tb_SignExtend8bit 
+# Start time: 14:11:53 on Oct 25,2024
+# Loading work.tb_SignExtend8bit
+# Loading work.SignExtend8bit
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (9) for port 'A'. The port definition is at: C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/SignExtend8bit.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_SignExtend8bit/uut File: C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_SignExtend8bit.v Line: 10
+run -all
+# Time: 0, in: 001110000, out: 0000000001110000
+# Time: 10, in: 010001111, out: 1111111110001111
+# Time: 20, in: 000101010, out: 0000000000101010
+# Time: 30, in: 011111111, out: 1111111111111111
+# Time: 40, in: 000001010, out: 0000000000001010
+# Time: 50, in: 011111111, out: 1111111111111111
+# ** Note: $finish    : C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_SignExtend8bit.v(29)
+#    Time: 60 ps  Iteration: 0  Instance: /tb_SignExtend8bit
+# 1
+# Break in Module tb_SignExtend8bit at C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_SignExtend8bit.v line 29
+# Compile of pc_control.v failed with 1 errors.
+vlog pc_control.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:29:19 on Oct 25,2024
+# vlog -reportprogress 300 pc_control.v 
+# -- Compiling module pc_control
+# ** Error: (vlog-13069) pc_control.v(5): near ";": syntax error, unexpected ';', expecting ')'.
+# End time: 14:29:20 on Oct 25,2024, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+# Compile of pc_control.v failed with 5 errors.
+vlog pc_control.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:30:59 on Oct 25,2024
+# vlog -reportprogress 300 pc_control.v 
+# -- Compiling module pc_control
+# ** Error: pc_control.v(11): (vlog-2730) Undefined variable: 'SEXTimm'.
+# ** Error: (vlog-13069) pc_control.v(26): near "output": syntax error, unexpected output, expecting IDENTIFIER or TYPE_IDENTIFIER or NETTYPE_IDENTIFIER or '='.
+# ** Error: (vlog-13069) pc_control.v(32): near "output": syntax error, unexpected output.
+# ** Error: (vlog-13069) pc_control.v(34): near "output": syntax error, unexpected output, expecting ':'.
+# ** Error: (vlog-13069) pc_control.v(55): near "output": syntax error, unexpected output.
+# End time: 14:30:59 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 5, Warnings: 0
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+vlog pc_control.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:33:23 on Oct 25,2024
+# vlog -reportprogress 300 pc_control.v 
+# -- Compiling module pc_control
+# ** Error: (vlog-13069) pc_control.v(28): near "output": syntax error, unexpected output, expecting IDENTIFIER or TYPE_IDENTIFIER or NETTYPE_IDENTIFIER or '='.
+# ** Error: (vlog-13069) pc_control.v(34): near "output": syntax error, unexpected output.
+# ** Error: (vlog-13069) pc_control.v(36): near "output": syntax error, unexpected output, expecting ':'.
+# ** Error: (vlog-13069) pc_control.v(57): near "output": syntax error, unexpected output.
+# End time: 14:33:23 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+# Compile of pc_control.v failed with 2 errors.
+vlog pc_control.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:35:12 on Oct 25,2024
+# vlog -reportprogress 300 pc_control.v 
+# -- Compiling module pc_control
+# ** Error: (vlog-13069) pc_control.v(36): near "out": syntax error, unexpected IDENTIFIER, expecting ':'.
+# ** Error: (vlog-13069) pc_control.v(57): near "output": syntax error, unexpected output.
+# End time: 14:35:12 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+# Compile of pc_control.v failed with 1 errors.
+vlog pc_control.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:36:46 on Oct 25,2024
+# vlog -reportprogress 300 pc_control.v 
+# -- Compiling module pc_control
+# ** Error: pc_control.v(48): (vlog-2730) Undefined variable: 'ou'.
+# End time: 14:36:46 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+# Compile of pc_control.v was successful.
+# Compile of tb_Mux.v failed with 5 errors.
+vlog tb_Mux.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:42:12 on Oct 25,2024
+# vlog -reportprogress 300 tb_Mux.v 
+# -- Compiling module tb_Mux
+# ** Error: tb_Mux.v(17): Checker 'check' not found.  Instantiation 'test1' must be of a visible checker.
+# 
+# ** Error: tb_Mux.v(19): Checker 'check' not found.  Instantiation 'test2' must be of a visible checker.
+# 
+# ** Error: tb_Mux.v(17): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+# ** Error: tb_Mux.v(19): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+# -- Compiling module check
+# ** Error: tb_Mux.v(33): (vlog-2730) Undefined variable: 'exp'.
+# End time: 14:42:12 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 5, Warnings: 0
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+vlog tb_Mux.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:52:59 on Oct 25,2024
+# vlog -reportprogress 300 tb_Mux.v 
+# -- Compiling module tb_Mux
+# ** Error: tb_Mux.v(17): Checker 'check' not found.  Instantiation 'test1' must be of a visible checker.
+# 
+# ** Error: tb_Mux.v(19): Checker 'check' not found.  Instantiation 'test2' must be of a visible checker.
+# 
+# ** Error: tb_Mux.v(17): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+# ** Error: tb_Mux.v(19): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+# -- Compiling module check
+# ** Error: tb_Mux.v(32): (vlog-2123) Missing argument for format specification '%b'.
+# ** Error: tb_Mux.v(32): (vlog-2123) Missing argument for format specification '%b'.
+# ** Error: tb_Mux.v(34): (vlog-2123) Missing argument for format specification '%b'.
+# ** Error: tb_Mux.v(34): (vlog-2123) Missing argument for format specification '%b'.
+# End time: 14:52:59 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 8, Warnings: 0
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+vlog tb_Mux.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:53:29 on Oct 25,2024
+# vlog -reportprogress 300 tb_Mux.v 
+# -- Compiling module tb_Mux
+# ** Error: tb_Mux.v(17): Checker 'check' not found.  Instantiation 'test1' must be of a visible checker.
+# 
+# ** Error: tb_Mux.v(19): Checker 'check' not found.  Instantiation 'test2' must be of a visible checker.
+# 
+# ** Error: tb_Mux.v(17): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+# ** Error: tb_Mux.v(19): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+# -- Compiling module check
+# End time: 14:53:29 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+vlog tb_Mux.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:55:51 on Oct 25,2024
+# vlog -reportprogress 300 tb_Mux.v 
+# -- Compiling module tb_Mux
+# ** Error: tb_Mux.v(17): Checker 'check' not found.  Instantiation 'test1' must be of a visible checker.
+# 
+# ** Error: tb_Mux.v(19): Checker 'check' not found.  Instantiation 'test2' must be of a visible checker.
+# 
+# ** Error: tb_Mux.v(17): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+# ** Error: tb_Mux.v(19): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+# -- Compiling module check
+# End time: 14:55:51 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+vlog tb_Mux.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:55:58 on Oct 25,2024
+# vlog -reportprogress 300 tb_Mux.v 
+# -- Compiling module tb_Mux
+# ** Error: tb_Mux.v(17): Checker 'check' not found.  Instantiation 'test1' must be of a visible checker.
+# 
+# ** Error: tb_Mux.v(19): Checker 'check' not found.  Instantiation 'test2' must be of a visible checker.
+# 
+# ** Error: tb_Mux.v(17): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+# ** Error: tb_Mux.v(19): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+# -- Compiling module check
+# End time: 14:55:58 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+vlog tb_Mux.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:56:11 on Oct 25,2024
+# vlog -reportprogress 300 tb_Mux.v 
+# -- Compiling module tb_Mux
+# ** Error: tb_Mux.v(17): Checker 'check' not found.  Instantiation 'test1' must be of a visible checker.
+# 
+# ** Error: tb_Mux.v(19): Checker 'check' not found.  Instantiation 'test2' must be of a visible checker.
+# 
+# ** Error: tb_Mux.v(17): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+# ** Error: tb_Mux.v(19): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+# -- Compiling module check
+# End time: 14:56:12 on Oct 25,2024, Elapsed time: 0:00:01
+# Errors: 4, Warnings: 0
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+# Compile of tb_Mux.v failed with 4 errors.
+vlog tb_Mux.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:57:23 on Oct 25,2024
+# vlog -reportprogress 300 tb_Mux.v 
+# -- Compiling module check
+# -- Compiling module tb_Mux
+# ** Error: tb_Mux.v(32): Checker 'check' not found.  Instantiation 'test1' must be of a visible checker.
+# 
+# ** Error: tb_Mux.v(34): Checker 'check' not found.  Instantiation 'test2' must be of a visible checker.
+# 
+# ** Error: tb_Mux.v(32): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+# ** Error: tb_Mux.v(34): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+# End time: 14:57:23 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+# ** Error: (vish-191) Questa has encountered an unexpected internal error: ../../src/tkgui/tkMain.c(2630). 
+# Please contact Questa support at http://supportnet.mentor.com
+vlog tb_Mux.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:58:33 on Oct 25,2024
+# vlog -reportprogress 300 tb_Mux.v 
+# -- Compiling module check
+# -- Compiling module tb_Mux
+# ** Error: tb_Mux.v(32): Checker 'check' not found.  Instantiation 'test1' must be of a visible checker.
+# 
+# ** Error: tb_Mux.v(34): Checker 'check' not found.  Instantiation 'test2' must be of a visible checker.
+# 
+# ** Error: tb_Mux.v(32): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+# ** Error: tb_Mux.v(34): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+# End time: 14:58:33 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+# Compile of bitman.v failed with 1 errors.
+vlog bitman.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:17:53 on Oct 25,2024
+# vlog -reportprogress 300 bitman.v 
+# -- Compiling module bitman
+# ** Error: (vlog-13069) bitman.v(13): near "[": syntax error, unexpected '['.
+# End time: 15:17:53 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+vlog bitman.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:19:01 on Oct 25,2024
+# vlog -reportprogress 300 bitman.v 
+# -- Compiling module bitman
+# ** Error: (vlog-13069) bitman.v(16): near "[": syntax error, unexpected '['.
+# End time: 15:19:01 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+vlog bitman.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:19:10 on Oct 25,2024
+# vlog -reportprogress 300 bitman.v 
+# -- Compiling module bitman
+# ** Error: (vlog-13069) bitman.v(16): near "[": syntax error, unexpected '['.
+# End time: 15:19:11 on Oct 25,2024, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+vlog bitman.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:20:49 on Oct 25,2024
+# vlog -reportprogress 300 bitman.v 
+# -- Compiling module bitman
+# ** Error: (vlog-13069) bitman.v(17): near "assign": syntax error, unexpected assign, expecting ';' or ','.
+# End time: 15:20:49 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+vlog bitman.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:21:01 on Oct 25,2024
+# vlog -reportprogress 300 bitman.v 
+# -- Compiling module bitman
+# 
+# Top level modules:
+# 	bitman
+# End time: 15:21:01 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

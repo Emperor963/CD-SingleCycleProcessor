@@ -18,12 +18,12 @@ module tb_SignExtend4bit;
         $monitor("Time: %0d, in: %b, out: %b", $time, Ain, Bout);
 
         // Test with various inputs
-        Ain = 4'b0111; #10; // Positive small number
-        Ain = 4'b1000; #10; // Negative small number (two's complement)
-        Ain = 4'b0010; #10; // Most negative 8-bit number (-128)
-        Ain = 4'b0111; #10; // Largest positive 8-bit number (127)
-        Ain = 4'b0000; #10; // Zero
-        Ain = 4'b1111; #10; // -1 in two's complement
+        Ain = 8'b00001111; #10; // Positive small number
+        Ain = 8'b11110000; #10; // Negative small number (two's complement)
+        Ain = 8'b10000000; #10; // Most negative 8-bit number (-128)
+        Ain = 8'b01111111; #10; // Largest positive 8-bit number (127)
+        Ain = 8'b00000000; #10; // Zero
+        Ain = 8'b11111111; #10; // -1 in two's complement
 
         // Finish simulation
         $finish;
