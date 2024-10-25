@@ -8,7 +8,7 @@ module ALU(
     output [15:0] ALUOut
 );
 
-wire [15:0] sum, difference, pad, red, rorO, sllO, srlO, zor;
+wire [15:0] sum, difference, pad, red, ror0, sll0, srl0, zor;
 
 wire cAdd, cDiff, ovflAdd, ovflSub;
 
