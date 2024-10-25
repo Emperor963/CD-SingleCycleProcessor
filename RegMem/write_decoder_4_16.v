@@ -8,6 +8,6 @@ wire [15:0] sample;
 
 assign wire = 16'h1;
 
-assign wordline = (write_reg == 1'b0) 16'h0 : sample << reg_id; //CHANGE TO CONST SHAMTS
+assign wordline = !(write_reg ^ 0) ?  16'h0 : sample << reg_id; //CHANGE TO CONST SHAMTS
 
 endmodule

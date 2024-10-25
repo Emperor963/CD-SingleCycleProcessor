@@ -8,6 +8,8 @@ module 16bit_3to1MUX(
     output [15:0] out
 );
 
-assign out = (control == 01) ? sigA : (control == 10) ? sigB : (control == 11) ? sigC; //GET RID OF == STATEMENTS
+assign out = !(control ^ 01) ? sigA : !(control ^ 10) ? sigB : !(control ^ 11) ? sigC; //GET RID OF == STATEMENTS
 
+
+//DOES BITWISE XOR WORK?
 endmodule

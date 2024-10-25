@@ -5,20 +5,13 @@ module ror(
     output[15:0] Aout
 );
 
-wire [15:0] Adummy;
+wire[15:0] R1, R2, R4, R8; //temporary storage for individual rotation bits
 
-assign Adummy = Ain << 1;
+assign R1 = shamt[0] ? {Ain[0] , Ain[15:1]} : Ain;
+assign R2 = shamt[1] ? {R1[1:0], R1[15:2]} : R1;
+assign R4 = shamt[2] ? {R2[3:0], R2[15:4]} : R2;
+assign R8 = shamt[3] ? {R4[7:0] , R4[15:8]} :R4;
 
-//MAYBE CHANGE THIS TO BITWISE OR?
-assign Aout = {Adummy[shamt, 1],Ain[15:shamt]}; //Hooooly shit this is so smart
-
-
-//Basically we're concatenating the 15th to shamt'th bit in the lower significant bits,
-//and concatenating it with the (shamt-1)th bit to the 0th bit to the front. But in order to get 
-//the (shamt - 1)th bit without using -1, we take a dummy A variable, shift it to the left by 1 bit
-//and take the shamt th bit to 1th bit because they're all logically shifted by one. 
-
-
-//I can not stress how proud I am of this ingenious design.
+assign Aout = shamt[4] ? {R8[15:0]} : R8;
 
 endmodule
