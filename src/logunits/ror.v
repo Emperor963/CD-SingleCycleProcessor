@@ -14,4 +14,9 @@ assign R8 = shamt[3] ? {R4[7:0] , R4[15:8]} :R4;
 
 assign Aout = shamt[4] ? {R8[15:0]} : R8;
 
+
 endmodule
+
+
+
+
