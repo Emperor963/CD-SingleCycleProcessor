@@ -9,32 +9,99 @@ z2
 !i10f 100
 cModel Technology
 dC:/intelFPGA/20.1
-vMUX16bit_2to1
-!s110 1729879576
+vbitman
+!s110 1729887661
 !i10b 1
-!s100 [^MfE8[zWlX?H:VOBNOB90
+!s100 @5e@;1?]5;XEz0kOcLDLK3
 Z0 !s11b Dg1SIo80bB@j0V0VzS_@n1
-Ia=6HYWePenfR4W8PTnV5<0
+ILogRIQi>K]0?TDZM61?OO0
 Z1 VDg1SIo80bB@j0V0VzS_@n1
 Z2 dC:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src
-w1729857366
-8C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/MUX16bit_2to1.v
-FC:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/MUX16bit_2to1.v
-!i122 1
-Z3 L0 1 11
-Z4 OV;L;2020.1;71
+w1729887658
+8bitman.v
+Fbitman.v
+!i122 39
+L0 1 21
+Z3 OV;L;2020.1;71
 r1
 !s85 0
 31
-!s108 1729879576.000000
+!s108 1729887661.000000
+!s107 bitman.v|
+!s90 -reportprogress|300|bitman.v|
+!i113 1
+Z4 tCvgOpt 0
+vcheck
+!s110 1729886313
+!i10b 1
+!s100 IKPV:RCTdTDH5WH7M`M@<0
+R0
+Iim7Tl9EQSPkk_eE]ASTd@1
+R1
+R2
+w1729886229
+8tb_Mux.v
+Ftb_Mux.v
+!i122 38
+L0 1 14
+R3
+r1
+!s85 0
+31
+!s108 1729886313.000000
+!s107 tb_Mux.v|
+!s90 -reportprogress|300|tb_Mux.v|
+!i113 1
+R4
+vflag_reg
+Z5 !s110 1729882073
+!i10b 1
+!s100 LkPGB9gRoDYXE?UJiL`d<0
+R0
+I5VUIhH89M6QPY;cAkoAKE3
+R1
+R2
+w1729881622
+8C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/flag_reg.v
+FC:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/flag_reg.v
+!i122 18
+L0 1 13
+R3
+r1
+!s85 0
+31
+Z6 !s108 1729882073.000000
+!s107 C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/flag_reg.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/flag_reg.v|
+!i113 1
+Z7 o-work work
+R4
+vMUX16bit_2to1
+R5
+!i10b 1
+!s100 [^MfE8[zWlX?H:VOBNOB90
+R0
+Ia=6HYWePenfR4W8PTnV5<0
+R1
+R2
+w1729857366
+8C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/MUX16bit_2to1.v
+FC:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/MUX16bit_2to1.v
+!i122 20
+Z8 L0 1 11
+R3
+r1
+!s85 0
+31
+R6
 !s107 C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/MUX16bit_2to1.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/MUX16bit_2to1.v|
 !i113 1
-Z5 o-work work
-Z6 tCvgOpt 0
+R7
+R4
 n@m@u@x16bit_2to1
 vMUX16bit_4to1
-!s110 1729880051
+R5
 !i10b 1
 !s100 `>bdg5SQh;U3QQKSC7Aa41
 R0
@@ -44,44 +111,68 @@ R2
 w1729880041
 8C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/MUX16bit_4to1.v
 FC:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/MUX16bit_4to1.v
-!i122 3
+!i122 21
 L0 1 27
-R4
+R3
 r1
 !s85 0
 31
-!s108 1729880051.000000
+R6
 !s107 C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/MUX16bit_4to1.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/MUX16bit_4to1.v|
 !i113 1
-R5
-R6
+R7
+R4
 n@m@u@x16bit_4to1
 vMUX4bit_2to1
-!s110 1729879873
+R5
 !i10b 1
 !s100 Z]OG4N4>1i838FzT`i8SO1
 R0
-Izd4Gk4nnoZSSgBXQVodgV3
+IOXO[8`H9BdI;nXcVOXehJ2
 R1
 R2
 w1729857155
-8MUX4bit_2to1.v
-FMUX4bit_2to1.v
-!i122 2
+8C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/MUX4bit_2to1.v
+FC:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/MUX4bit_2to1.v
+!i122 19
+R8
 R3
-R4
 r1
 !s85 0
 31
-!s108 1729879873.000000
-!s107 MUX4bit_2to1.v|
-!s90 -reportprogress|300|MUX4bit_2to1.v|
-!i113 1
 R6
+!s107 C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/MUX4bit_2to1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/MUX4bit_2to1.v|
+!i113 1
+R7
+R4
 n@m@u@x4bit_2to1
+vpc_control
+!s110 1729885024
+!i10b 1
+!s100 `HA5hQJFQG1a3KIjNlAl=2
+R0
+IN11LTYmgMV<KOgU3:zeC>2
+R1
+R2
+w1729885020
+8C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/pc_control.v
+FC:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/pc_control.v
+!i122 30
+L0 1 60
+R3
+r1
+!s85 0
+31
+!s108 1729885024.000000
+!s107 C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/pc_control.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/pc_control.v|
+!i113 1
+R7
+R4
 vsign_extend_tb
-!s110 1729881132
+!s110 1729881707
 !i10b 1
 !s100 Fed;AlcZf>_N4z^gc=5Xd3
 R0
@@ -91,19 +182,19 @@ R2
 w1729880861
 8tb_SignExtend4bit.v
 Ftb_SignExtend4bit.v
-!i122 9
-L0 1 32
-R4
+!i122 12
+Z9 L0 1 32
+R3
 r1
 !s85 0
 31
-!s108 1729881132.000000
+!s108 1729881707.000000
 !s107 tb_SignExtend4bit.v|
 !s90 -reportprogress|300|tb_SignExtend4bit.v|
 !i113 1
-R6
+R4
 vSignExtend4bit
-!s110 1729880242
+R5
 !i10b 1
 !s100 NT024<K9UQ3ZS61GcZ<h83
 R0
@@ -113,21 +204,21 @@ R2
 w1729880232
 8C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/SignExtend4bit.v
 FC:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/SignExtend4bit.v
-!i122 4
-Z7 L0 1 9
-R4
+!i122 22
+Z10 L0 1 9
+R3
 r1
 !s85 0
 31
-!s108 1729880242.000000
+R6
 !s107 C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/SignExtend4bit.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/SignExtend4bit.v|
 !i113 1
-R5
-R6
+R7
+R4
 n@sign@extend4bit
 vSignExtend8bit
-!s110 1729880247
+R5
 !i10b 1
 !s100 Y9Ol;FkERYB]aM0]LGL@70
 R0
@@ -137,16 +228,64 @@ R2
 w1729880227
 8C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/SignExtend8bit.v
 FC:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/SignExtend8bit.v
-!i122 5
-R7
-R4
+!i122 23
+R10
+R3
 r1
 !s85 0
 31
-!s108 1729880247.000000
+R6
 !s107 C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/SignExtend8bit.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/SignExtend8bit.v|
 !i113 1
-R5
-R6
+R7
+R4
 n@sign@extend8bit
+vtb_SignExtend4bit
+!s110 1729883204
+!i10b 1
+!s100 lok3PE[kLEC9<4@i:479H1
+R0
+IIc?oJ_ZdX:]d5JOeZJnL72
+R1
+R2
+w1729883194
+8C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_SignExtend4bit.v
+FC:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_SignExtend4bit.v
+!i122 28
+R9
+R3
+r1
+!s85 0
+31
+!s108 1729883204.000000
+!s107 C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_SignExtend4bit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_SignExtend4bit.v|
+!i113 1
+R7
+R4
+ntb_@sign@extend4bit
+vtb_SignExtend8bit
+!s110 1729883503
+!i10b 1
+!s100 mDa7Th6;U?Bd7<aEznA]G0
+R0
+I^KBP2ULgmJaRAbRMjFoSK0
+R1
+R2
+w1729883486
+8C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_SignExtend8bit.v
+FC:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_SignExtend8bit.v
+!i122 29
+R9
+R3
+r1
+!s85 0
+31
+!s108 1729883503.000000
+!s107 C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_SignExtend8bit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_SignExtend8bit.v|
+!i113 1
+R7
+R4
+ntb_@sign@extend8bit
