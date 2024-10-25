@@ -25,7 +25,7 @@ claAddSub targAddr(.A(PC_update), .Bin(targetAddr), .Cin(1'b0), .isSub(1'b0), .S
                     );
 
 
-wire [15:0] out;
+reg [15:0] out;
 always @(*) begin
     
     case (C)
