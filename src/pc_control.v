@@ -25,30 +25,30 @@ claAddSub targAddr(.A(PC_update), .Bin(targetAddr), .Cin(1'b0), .isSub(1'b0), .S
                     );
 
 
-reg[15:0] output;
+reg[15:0] out;
 always @(*) begin
     
     case (C)
 
     3'b000:
-        output = !Z ? target_address : PC_update;
+        out = !Z ? target_address : PC_update;
     3'b001
-        output = Z ? target_address : PC_update;
+        out = Z ? target_address : PC_update;
     3'b010
-        output = (!Z & !N) ? target_address  : PC_update;
+        out = (!Z & !N) ? target_address  : PC_update;
     3'b011
-        output = N ? target_address : PC_update;
+        out = N ? target_address : PC_update;
     3'b100
-        output = (Z | (!Z & !N)) ? target_address : PC_update;
+        out = (Z | (!Z & !N)) ? target_address : PC_update;
     3'b101
-        output = (N | Z) ? target_address : PC_update;
+        out = (N | Z) ? target_address : PC_update;
     3'b110
-        output = V ? target_address : PC_update;
+        out = V ? target_address : PC_update;
     3'b111
-        output = target_address;
+        ou = target_address;
 
     default:
-        output = PC_update;
+        out = PC_update;
     endcase
 
 end
