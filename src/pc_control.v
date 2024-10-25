@@ -32,19 +32,19 @@ always @(*) begin
 
     3'b000:
         out = !Z ? target_address : PC_update;
-    3'b001
+    3'b001:
         out = Z ? target_address : PC_update;
-    3'b010
+    3'b010:
         out = (!Z & !N) ? target_address  : PC_update;
-    3'b011
+    3'b011:
         out = N ? target_address : PC_update;
-    3'b100
+    3'b100:
         out = (Z | (!Z & !N)) ? target_address : PC_update;
-    3'b101
+    3'b101:
         out = (N | Z) ? target_address : PC_update;
-    3'b110
+    3'b110:
         out = V ? target_address : PC_update;
-    3'b111
+    3'b111:
         ou = target_address;
 
     default:
@@ -54,7 +54,7 @@ always @(*) begin
 end
 
 
-assign pc_out = output;
+assign pc_out = out;
 
 
 endmodule
