@@ -101,3 +101,206 @@ vsim ALU_tb
 # End time: 19:30:23 on Oct 25,2024, Elapsed time: 0:00:00
 # Errors: 2, Warnings: 6
 # Compile of tb_ALU.v was successful.
+vsim ALU_tb
+# vsim ALU_tb 
+# Start time: 19:36:28 on Oct 25,2024
+# Loading work.ALU_tb
+# Loading work.ALU
+# Loading work.claAddSub
+# Loading work.adder_4bit
+# Loading work.adder_1bit
+# Loading work.CLA
+# Loading work.paddsb
+# Loading work.red
+# Loading work.ror
+# Loading work.sll
+# Loading work.srl
+# Loading work.xor_module
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'add6'.  Expected 8, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/uut/reduction/add6 File: C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/red.v Line: 48
+# ** Warning: (vsim-3722) C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/red.v(48): [TFMPC] - Missing connection for port 'Cout'.
+# ** Warning: (vsim-3722) C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/red.v(48): [TFMPC] - Missing connection for port 'P'.
+# ** Warning: (vsim-3722) C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/red.v(48): [TFMPC] - Missing connection for port 'G'.
+# ** Warning: (vsim-3722) C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/red.v(48): [TFMPC] - Missing connection for port 'ovfl'.
+run -all
+# ADD: In1=0000000000010000, In2=0000000000000100, ALUOp=000, FLAG=000, ALUOut=0000000000010100
+# SUB: In1=0000000000010100, In2=0000000000000101, ALUOp=001, FLAG=000, ALUOut=0000000000011001
+# XOR: In1=1010101111001101, In2=1010101111001101, ALUOp=010, FLAG=0x0, ALUOut=0101011110011010
+# RED: In1=1111111100000000, In2=0000000011111111, ALUOp=011, FLAG=001, ALUOut=1111111111111111
+# ** Note: $finish    : C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_ALU.v(77)
+#    Time: 50 ns  Iteration: 0  Instance: /ALU_tb
+# 1
+# Break in Module ALU_tb at C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_ALU.v line 77
+vlog ALU.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:37:53 on Oct 25,2024
+# vlog -reportprogress 300 ALU.v 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 19:37:53 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim ALU_tb
+# End time: 19:38:03 on Oct 25,2024, Elapsed time: 0:01:35
+# Errors: 0, Warnings: 8
+# vsim ALU_tb 
+# Start time: 19:38:03 on Oct 25,2024
+# Loading work.ALU_tb
+# Loading work.ALU
+# Loading work.claAddSub
+# Loading work.adder_4bit
+# Loading work.adder_1bit
+# Loading work.CLA
+# Loading work.paddsb
+# Loading work.red
+# Loading work.ror
+# Loading work.sll
+# Loading work.srl
+# Loading work.xor_module
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'add6'.  Expected 8, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/uut/reduction/add6 File: C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/red.v Line: 48
+# ** Warning: (vsim-3722) C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/red.v(48): [TFMPC] - Missing connection for port 'Cout'.
+# ** Warning: (vsim-3722) C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/red.v(48): [TFMPC] - Missing connection for port 'P'.
+# ** Warning: (vsim-3722) C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/red.v(48): [TFMPC] - Missing connection for port 'G'.
+# ** Warning: (vsim-3722) C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/red.v(48): [TFMPC] - Missing connection for port 'ovfl'.
+run -all
+# ADD: In1=0000000000010000, In2=0000000000000100, ALUOp=000, FLAG=000, ALUOut=0000000000010100
+# SUB: In1=0000000000010100, In2=0000000000000101, ALUOp=001, FLAG=000, ALUOut=0000000000011001
+# XOR: In1=1010101111001101, In2=1010101111001101, ALUOp=010, FLAG=0x0, ALUOut=0101011110011010
+# RED: In1=1111111100000000, In2=0000000011111111, ALUOp=011, FLAG=001, ALUOut=1111111111111111
+# ** Note: $finish    : C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_ALU.v(77)
+#    Time: 50 ns  Iteration: 0  Instance: /ALU_tb
+# 1
+# Break in Module ALU_tb at C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_ALU.v line 77
+run ALU.v
+# Invalid time value: ALU.v
+run ALU.v
+# Invalid time value: ALU.v
+vsim ALU
+# End time: 19:40:01 on Oct 25,2024, Elapsed time: 0:01:58
+# Errors: 0, Warnings: 6
+# vsim ALU 
+# Start time: 19:40:01 on Oct 25,2024
+# Loading work.ALU
+# Loading work.claAddSub
+# Loading work.adder_4bit
+# Loading work.adder_1bit
+# Loading work.CLA
+# Loading work.paddsb
+# Loading work.red
+# Loading work.ror
+# Loading work.sll
+# Loading work.srl
+# Loading work.xor_module
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'add6'.  Expected 8, found 4.
+#    Time: 0 ns  Iteration: 0  Instance: /ALU/reduction/add6 File: C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/red.v Line: 48
+# ** Warning: (vsim-3722) C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/red.v(48): [TFMPC] - Missing connection for port 'Cout'.
+# ** Warning: (vsim-3722) C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/red.v(48): [TFMPC] - Missing connection for port 'P'.
+# ** Warning: (vsim-3722) C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/red.v(48): [TFMPC] - Missing connection for port 'G'.
+# ** Warning: (vsim-3722) C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/red.v(48): [TFMPC] - Missing connection for port 'ovfl'.
+# Compile of cpu.v failed with 3 errors.
+# Compile of flag_reg.v was successful.
+# Compile of MUX4bit_2to1.v was successful.
+# Compile of MUX16bit_2to1.v was successful.
+# Compile of MUX16bit_4to1.v was successful.
+# Compile of pc_control.v was successful.
+# Compile of SignExtend4bit.v was successful.
+# Compile of SignExtend8bit.v was successful.
+# Compile of tb_SignExtend4bit.v was successful.
+# Compile of tb_SignExtend8bit.v was successful with warnings.
+# Compile of tb_Mux.v failed with 4 errors.
+# Compile of bitman.v was successful.
+# Compile of cpu_control.v was successful.
+# Compile of tb_ALU.v was successful.
+# Compile of adder_1bit.v was successful.
+# Compile of adder_4bit.v was successful.
+# Compile of CLA.v was successful.
+# Compile of claAddSub.v was successful.
+# Compile of paddsb.v was successful.
+# Compile of ror.v was successful.
+# Compile of sll.v was successful.
+# Compile of srl.v was successful.
+# Compile of xor_module.v was successful.
+# Compile of tb_red.v was successful.
+# Compile of red.v was successful with warnings.
+# Compile of ALU.v failed with 2 errors.
+# 26 compiles, 3 failed with 9 errors.
+vlog ALU.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:40:53 on Oct 25,2024
+# vlog -reportprogress 300 ALU.v 
+# ** Error: (vlog-13053) ALU.v(1): near "'t": Illegal base specifier in numeric constant.
+# ** Error: (vlog-13069) ALU.v(1): near "'t": syntax error, unexpected BASE, expecting class.
+# End time: 19:40:53 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+vlog ALU.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:41:34 on Oct 25,2024
+# vlog -reportprogress 300 ALU.v 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 19:41:34 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim ALU_tb
+# End time: 19:41:58 on Oct 25,2024, Elapsed time: 0:01:57
+# Errors: 0, Warnings: 7
+# vsim ALU_tb 
+# Start time: 19:41:58 on Oct 25,2024
+# Loading work.ALU_tb
+# Loading work.ALU
+# Loading work.claAddSub
+# Loading work.adder_4bit
+# Loading work.adder_1bit
+# Loading work.CLA
+# Loading work.paddsb
+# Loading work.red
+# Loading work.ror
+# Loading work.sll
+# Loading work.srl
+# Loading work.xor_module
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'add6'.  Expected 8, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/uut/reduction/add6 File: C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/red.v Line: 48
+# ** Warning: (vsim-3722) C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/red.v(48): [TFMPC] - Missing connection for port 'Cout'.
+# ** Warning: (vsim-3722) C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/red.v(48): [TFMPC] - Missing connection for port 'P'.
+# ** Warning: (vsim-3722) C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/red.v(48): [TFMPC] - Missing connection for port 'G'.
+# ** Warning: (vsim-3722) C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/red.v(48): [TFMPC] - Missing connection for port 'ovfl'.
+run -all
+# ADD: In1=0000000000010000, In2=0000000000000100, ALUOp=000, FLAG=000, ALUOut=0000000000010100
+# SUB: In1=0000000000010100, In2=0000000000000101, ALUOp=001, FLAG=000, ALUOut=0000000000011001
+# XOR: In1=1010101111001101, In2=1010101111001101, ALUOp=010, FLAG=0x0, ALUOut=0101011110011010
+# RED: In1=1111111100000000, In2=0000000011111111, ALUOp=011, FLAG=001, ALUOut=1111111111111111
+# ** Note: $finish    : C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_ALU.v(77)
+#    Time: 50 ns  Iteration: 0  Instance: /ALU_tb
+# 1
+# Break in Module ALU_tb at C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_ALU.v line 77
+run ALU.v
+# Invalid time value: ALU.v
+run ALU
+# Invalid time value: ALU
+vsim ALU
+# End time: 19:42:34 on Oct 25,2024, Elapsed time: 0:00:36
+# Errors: 0, Warnings: 6
+# vsim ALU 
+# Start time: 19:42:34 on Oct 25,2024
+# Loading work.ALU
+# Loading work.claAddSub
+# Loading work.adder_4bit
+# Loading work.adder_1bit
+# Loading work.CLA
+# Loading work.paddsb
+# Loading work.red
+# Loading work.ror
+# Loading work.sll
+# Loading work.srl
+# Loading work.xor_module
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'add6'.  Expected 8, found 4.
+#    Time: 0 ns  Iteration: 0  Instance: /ALU/reduction/add6 File: C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/red.v Line: 48
+# ** Warning: (vsim-3722) C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/red.v(48): [TFMPC] - Missing connection for port 'Cout'.
+# ** Warning: (vsim-3722) C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/red.v(48): [TFMPC] - Missing connection for port 'P'.
+# ** Warning: (vsim-3722) C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/red.v(48): [TFMPC] - Missing connection for port 'G'.
+# ** Warning: (vsim-3722) C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/red.v(48): [TFMPC] - Missing connection for port 'ovfl'.
+run -all
