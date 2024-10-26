@@ -18,7 +18,7 @@ wire V = FLAG[2];
 
 wire[15:0] PC_update, target_address;
 
-clAddSub pcAddr(.A(pc_in), .Bin(16'd2), .Cin(1'b0), .isSub(1'b0), .S(PC_update) 
+claAddSub pcAddr(.A(pc_in), .Bin(16'd2), .Cin(1'b0), .isSub(1'b0), .S(PC_update) 
                 //, .Cout(), .ovfl()
                 );
 claAddSub targAddr(.A(PC_update), .Bin(targetAddr), .Cin(1'b0), .isSub(1'b0), .S(target_address)

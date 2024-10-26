@@ -788,3 +788,123 @@ run -all
 # Test 5: A = aaaa, B = 5555, Sum = ffff, Expected = 16'hFFFF
 # ** Note: $finish    : C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_paddsb.v(64)
 #    Time: 50 ps  Iteration: 0  Instance: /tb_paddsb
+# 1
+# Break in Module tb_paddsb at C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_paddsb.v line 64
+# Compile of tb_pc_control.v failed with 4 errors.
+vlog tb_pc_control
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:08:26 on Oct 25,2024
+# vlog -reportprogress 300 tb_pc_control 
+# ** Error: (vlog-7) Failed to open design unit file "tb_pc_control" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 22:08:26 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+# Compile of tb_pc_control.v failed with 4 errors.
+# Compile of tb_pc_control.v failed with 4 errors.
+vlog tb_pc_control
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:10:15 on Oct 25,2024
+# vlog -reportprogress 300 tb_pc_control 
+# ** Error: (vlog-7) Failed to open design unit file "tb_pc_control" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 22:10:15 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+vlog tb_pc_control.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:10:20 on Oct 25,2024
+# vlog -reportprogress 300 tb_pc_control.v 
+# -- Compiling module tb_pc_control
+# ** Error: (vlog-13069) tb_pc_control.v(14): near "h": syntax error, unexpected IDENTIFIER, expecting ';'.
+# ** Error: (vlog-13069) tb_pc_control.v(18): near "b": syntax error, unexpected IDENTIFIER, expecting ';'.
+# ** Error: (vlog-13069) tb_pc_control.v(22): near "b": syntax error, unexpected IDENTIFIER.
+# ** Error: tb_pc_control.v(31): (vlog-13205) Syntax error found in the scope following 'C'. Is there a missing '::'?
+# End time: 22:10:20 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+vlog tb_pc_control.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:12:35 on Oct 25,2024
+# vlog -reportprogress 300 tb_pc_control.v 
+# -- Compiling module tb_pc_control
+# ** Error: (vlog-13069) tb_pc_control.v(19): near "FLAG": syntax error, unexpected IDENTIFIER, expecting ';'.
+# ** Error: (vlog-13069) tb_pc_control.v(30): near "FLAG": syntax error, unexpected IDENTIFIER, expecting ';'.
+# ** Error: (vlog-13069) tb_pc_control.v(41): near "FLAG": syntax error, unexpected IDENTIFIER, expecting ';'.
+# ** Error: (vlog-13069) tb_pc_control.v(52): near "FLAG": syntax error, unexpected IDENTIFIER, expecting ';'.
+# ** Error: (vlog-13069) tb_pc_control.v(64): near "FLAG": syntax error, unexpected IDENTIFIER, expecting ';'.
+# End time: 22:12:35 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 5, Warnings: 0
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+vlog tb_pc_control.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:13:04 on Oct 25,2024
+# vlog -reportprogress 300 tb_pc_control.v 
+# -- Compiling module tb_pc_control
+# 
+# Top level modules:
+# 	tb_pc_control
+# End time: 22:13:04 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim tb_pc_control
+# End time: 22:13:56 on Oct 25,2024, Elapsed time: 0:39:36
+# Errors: 0, Warnings: 7
+# vsim tb_pc_control 
+# Start time: 22:13:56 on Oct 25,2024
+# Loading work.tb_pc_control
+# Loading work.pc_control
+# ** Error: (vsim-3033) Instantiation of 'clAddSub' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pc_control/uut File: C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/pc_control.v Line: 21
+#         Searched libraries:
+#             C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/work
+# Loading work.claAddSub
+# ** Error (suppressible): (vsim-3009) [TSCALE] - Module 'tb_pc_control' does not have a timeunit/timeprecision specification in effect, but other modules do.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pc_control/uut/targAddr File: C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/claAddSub.v
+# Loading work.adder_4bit
+# Loading work.adder_1bit
+# Loading work.CLA
+# Error loading design
+# End time: 22:13:57 on Oct 25,2024, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 1
+# Compile of pc_control.v was successful.
+vsim tb_pc_control
+# vsim tb_pc_control 
+# Start time: 22:15:09 on Oct 25,2024
+# Loading work.tb_pc_control
+# Loading work.pc_control
+# Loading work.claAddSub
+# ** Error (suppressible): (vsim-3009) [TSCALE] - Module 'tb_pc_control' does not have a timeunit/timeprecision specification in effect, but other modules do.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pc_control/uut/pcAddr File: C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/claAddSub.v
+# Loading work.adder_4bit
+# Loading work.adder_1bit
+# Loading work.CLA
+# Error loading design
+# End time: 22:15:09 on Oct 25,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 2
+# Compile of claAddSub.v was successful.
+vsim tb_pc_control
+# vsim tb_pc_control 
+# Start time: 22:19:31 on Oct 25,2024
+# Loading work.tb_pc_control
+# Loading work.pc_control
+# Loading work.claAddSub
+# Loading work.adder_4bit
+# Loading work.adder_1bit
+# Loading work.CLA
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'uut'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pc_control/uut File: tb_pc_control.v Line: 9
+# ** Warning: (vsim-3722) tb_pc_control.v(9): [TFMPC] - Missing connection for port 'pc_out'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'pcAddr'.  Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pc_control/uut/pcAddr File: C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/pc_control.v Line: 21
+# ** Warning: (vsim-3722) C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/pc_control.v(21): [TFMPC] - Missing connection for port 'Cout'.
+# ** Warning: (vsim-3722) C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/pc_control.v(21): [TFMPC] - Missing connection for port 'ovfl'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'targAddr'.  Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pc_control/uut/targAddr File: C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/pc_control.v Line: 24
+# ** Warning: (vsim-3722) C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/pc_control.v(24): [TFMPC] - Missing connection for port 'Cout'.
+# ** Warning: (vsim-3722) C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/pc_control.v(24): [TFMPC] - Missing connection for port 'ovfl'.
+run -all
+# test 1 passed!
+# test 2 passed!
+# test 2 passed!
+# test 2 passed!
+# test 2 passed!

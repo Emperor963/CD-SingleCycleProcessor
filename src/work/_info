@@ -174,23 +174,23 @@ R6
 R7
 n@c@l@a
 vclaAddSub
-R0
+!s110 1729912720
 !i10b 1
-!s100 gVz8He[>KbV`LamY=gfk13
+!s100 CodQCQaW2zVQH=`L1XVmS3
 R1
-IXXE5k9;4ib[_B=hADV`4e1
+IGQ1^KiaDATl8c3f^Bn2V33
 R2
 R3
-w1729817944
+w1729912687
 8C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/claAddSub.v
 FC:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/claAddSub.v
-!i122 218
-L0 3 85
+!i122 245
+L0 2 85
 R4
 r1
 !s85 0
 31
-R5
+!s108 1729912720.000000
 !s107 C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/claAddSub.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/claAddSub.v|
 !i113 1
@@ -339,23 +339,23 @@ r1
 R6
 R7
 vpc_control
-R8
+!s110 1729912504
 !i10b 1
-!s100 `HA5hQJFQG1a3KIjNlAl=2
+!s100 EPz`[TmQ1[cUzU@M^`63m3
 R1
-IN11LTYmgMV<KOgU3:zeC>2
+ICebMdcaQF`Wik@<>YKi]I3
 R2
 R3
-w1729895926
+w1729912465
 8C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/pc_control.v
 FC:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/pc_control.v
-!i122 206
+!i122 244
 L0 1 60
 R4
 r1
 !s85 0
 31
-R10
+!s108 1729912504.000000
 !s107 C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/pc_control.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/pc_control.v|
 !i113 1
@@ -569,6 +569,28 @@ r1
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_paddsb.v|
 !i113 1
 R6
+R7
+vtb_pc_control
+!s110 1729912384
+!i10b 1
+!s100 iY]4LV1[W6k^^nKb@QP?Z0
+R1
+IiV028V0SbaN[c^FN9nW4=1
+R2
+R3
+w1729912380
+8tb_pc_control.v
+Ftb_pc_control.v
+!i122 243
+L0 1 80
+R4
+r1
+!s85 0
+31
+!s108 1729912384.000000
+!s107 tb_pc_control.v|
+!s90 -reportprogress|300|tb_pc_control.v|
+!i113 1
 R7
 vtb_red
 R0

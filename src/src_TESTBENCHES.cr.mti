@@ -30,7 +30,15 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 ** Error: C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_Mux.v(32): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
 ** Error: C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_Mux.v(34): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
 
-} {5.0 6.0 7.0 8.0 9.0 11.0} {}} C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_claAddSub.v {1 {vlog -work work -stats=none C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_claAddSub.v
+} {5.0 6.0 7.0 8.0 9.0 11.0} {}} C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_pc_control.v {0 {vlog -work work -stats=none C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_pc_control.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module tb_pc_control
+** Error: (vlog-13069) C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_pc_control.v(14): near "h": syntax error, unexpected IDENTIFIER, expecting ';'.
+** Error: (vlog-13069) C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_pc_control.v(18): near "b": syntax error, unexpected IDENTIFIER, expecting ';'.
+** Error: (vlog-13069) C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_pc_control.v(22): near "b": syntax error, unexpected IDENTIFIER.
+** Error: C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_pc_control.v(31): (vlog-13205) Syntax error found in the scope following 'C'. Is there a missing '::'?
+
+} {4.0 8.0} {}} C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_claAddSub.v {1 {vlog -work work -stats=none C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_claAddSub.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module tb_claAddSub
 
@@ -50,13 +58,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 
 Top level modules:
 	CLA
-
-} {} {}} C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/cpu_control.v {1 {vlog -work work -stats=none C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/cpu_control.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module cpu_control
-
-Top level modules:
-	cpu_control
 
 } {} {}} C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/SignExtend8bit.v {1 {vlog -work work -stats=none C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/SignExtend8bit.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -158,7 +159,21 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 ** Error (suppressible): C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/cpu.v(23): (vlog-2388) 'RegWrite' already declared in this scope (cpu) at C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/cpu.v(21).
 ** Error: (vlog-13069) C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/cpu.v(39): near "endmodule": syntax error, unexpected endmodule, expecting ';' or ','.
 
-} {4.0 5.0 6.0 7.0} {}} C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/sll.v {1 {vlog -work work -stats=none C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/sll.v
+} {4.0 5.0 6.0 7.0} {}} C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/pc_control.v {1 {vlog -work work -stats=none C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/pc_control.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module pc_control
+
+Top level modules:
+	pc_control
+
+} {} {}} C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_paddsb.v {1 {vlog -work work -stats=none C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_paddsb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module tb_paddsb
+
+Top level modules:
+	tb_paddsb
+
+} {} {}} C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/sll.v {1 {vlog -work work -stats=none C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/sll.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module sll
 
@@ -171,13 +186,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 
 Top level modules:
 	ror
-
-} {} {}} C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/pc_control.v {1 {vlog -work work -stats=none C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/pc_control.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module pc_control
-
-Top level modules:
-	pc_control
 
 } {} {}} C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/SignExtend4bit.v {1 {vlog -work work -stats=none C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/SignExtend4bit.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020

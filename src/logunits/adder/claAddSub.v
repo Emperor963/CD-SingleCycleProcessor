@@ -1,4 +1,3 @@
-`timescale 1ns/1ns
 
 module claAddSub(
     input[15:0] A,
