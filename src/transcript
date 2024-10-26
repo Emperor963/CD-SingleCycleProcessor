@@ -575,3 +575,216 @@ run -all
 #    Time: 50 ns  Iteration: 0  Instance: /ALU_tb
 # 1
 # Break in Module ALU_tb at C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_ALU.v line 77
+vlog red.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:42:45 on Oct 25,2024
+# vlog -reportprogress 300 red.v 
+# -- Compiling module red
+# ** Warning: red.v(34): (vlog-2697) MSB 11 of part-select into 'Sum_a' is out of bounds.
+# ** Warning: red.v(34): (vlog-2697) LSB 8 of part-select into 'Sum_a' is out of bounds.
+# ** Warning: red.v(35): (vlog-2697) MSB 15 of part-select into 'Sum_b' is out of bounds.
+# ** Warning: red.v(35): (vlog-2697) LSB 12 of part-select into 'Sum_b' is out of bounds.
+# ** Warning: red.v(38): (vlog-2697) MSB 7 of part-select into 'Sum_d' is out of bounds.
+# ** Warning: red.v(38): (vlog-2697) LSB 4 of part-select into 'Sum_d' is out of bounds.
+# 
+# Top level modules:
+# 	red
+# End time: 20:42:46 on Oct 25,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 6
+# Compile of red.v was successful.
+vsim tb_red
+# End time: 20:45:48 on Oct 25,2024, Elapsed time: 0:12:43
+# Errors: 0, Warnings: 9
+# vsim tb_red 
+# Start time: 20:45:48 on Oct 25,2024
+# Loading work.tb_red
+# Loading work.red
+# Loading work.adder_4bit
+# Loading work.adder_1bit
+# Loading work.CLA
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'add6'.  Expected 8, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_red/uut/add6 File: C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/red.v Line: 48
+# ** Warning: (vsim-3722) C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/red.v(48): [TFMPC] - Missing connection for port 'Cout'.
+# ** Warning: (vsim-3722) C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/red.v(48): [TFMPC] - Missing connection for port 'P'.
+# ** Warning: (vsim-3722) C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/red.v(48): [TFMPC] - Missing connection for port 'G'.
+# ** Warning: (vsim-3722) C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/red.v(48): [TFMPC] - Missing connection for port 'ovfl'.
+run -all
+# Test Case 1 - A: 0000000000000001, B: 0000000000000001, Sum: 0000000000100000
+# Test Case 2 - A: 0000111100001111, B: 0000000011110000, Sum: 0000000011101111
+# Test Case 3 - A: 1111111111111111, B: 0000000000000001, Sum: 1111111111111111
+# Test Case 4 - A: 0001001000110100, B: 0101011001111000, Sum: 1111111101010000
+# Test Case 5 - A: 1010101111001101, B: 1101110010111010, Sum: 1111111111110000
+# ** Note: $finish    : C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_red.v(45)
+#    Time: 50 ps  Iteration: 0  Instance: /tb_red
+# 1
+# Break in Module tb_red at C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_red.v line 45
+# Compile of red.v was successful.
+vsim tb_red
+# End time: 20:53:47 on Oct 25,2024, Elapsed time: 0:07:59
+# Errors: 0, Warnings: 8
+# vsim tb_red 
+# Start time: 20:53:47 on Oct 25,2024
+# Loading work.tb_red
+# Loading work.red
+# Loading work.adder_4bit
+# Loading work.adder_1bit
+# Loading work.CLA
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'add6'.  Expected 8, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_red/uut/add6 File: C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/red.v Line: 48
+# ** Warning: (vsim-3722) C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/red.v(48): [TFMPC] - Missing connection for port 'Cout'.
+# ** Warning: (vsim-3722) C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/red.v(48): [TFMPC] - Missing connection for port 'P'.
+# ** Warning: (vsim-3722) C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/red.v(48): [TFMPC] - Missing connection for port 'G'.
+# ** Warning: (vsim-3722) C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/red.v(48): [TFMPC] - Missing connection for port 'ovfl'.
+vsim tb_red
+# End time: 20:53:52 on Oct 25,2024, Elapsed time: 0:00:05
+# Errors: 0, Warnings: 6
+# vsim tb_red 
+# Start time: 20:53:52 on Oct 25,2024
+# Loading work.tb_red
+# Loading work.red
+# Loading work.adder_4bit
+# Loading work.adder_1bit
+# Loading work.CLA
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'add6'.  Expected 8, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_red/uut/add6 File: C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/red.v Line: 48
+# ** Warning: (vsim-3722) C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/red.v(48): [TFMPC] - Missing connection for port 'Cout'.
+# ** Warning: (vsim-3722) C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/red.v(48): [TFMPC] - Missing connection for port 'P'.
+# ** Warning: (vsim-3722) C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/red.v(48): [TFMPC] - Missing connection for port 'G'.
+# ** Warning: (vsim-3722) C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/red.v(48): [TFMPC] - Missing connection for port 'ovfl'.
+run -all
+# Test Case 1 - A: 0000000000000001, B: 0000000000000001, Sum: 0000000000000010
+# Test Case 2 - A: 0000111100001111, B: 0000000011110000, Sum: 1111111100001110
+# Test Case 3 - A: 1111111111111111, B: 0000000000000001, Sum: 1111111111111111
+# Test Case 4 - A: 0001001000110100, B: 0101011001111000, Sum: 1111111100010100
+# Test Case 5 - A: 1010101111001101, B: 1101110010111010, Sum: 0000001000001110
+# ** Note: $finish    : C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_red.v(45)
+#    Time: 50 ps  Iteration: 0  Instance: /tb_red
+# 1
+# Break in Module tb_red at C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_red.v line 45
+# Compile of paddsb.v was successful.
+# Compile of tb_claAddSub.v was successful.
+# Compile of tb_paddsb.v was successful.
+vsim tb_paddsb
+# End time: 21:08:07 on Oct 25,2024, Elapsed time: 0:14:15
+# Errors: 0, Warnings: 11
+# vsim tb_paddsb 
+# Start time: 21:08:07 on Oct 25,2024
+# Loading work.tb_paddsb
+# Loading work.paddsb
+# Loading work.adder_4bit
+# Loading work.adder_1bit
+# Loading work.CLA
+run -all
+# A = 1234, B = 4321, Sum = 0101010101010101, Expected 16'h5555
+# A = f234, B = 0001, Sum = f235, expected: 16'f235
+# A = ffff, B = 0001, Sum = fff0, expected: 16'fff8
+# A = 0000, B = 0000, Sum = 0000, expected 16'h0000
+# A = aaaa, B = 5555, Sum = ffff
+# ** Note: $finish    : C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_paddsb.v(50)
+#    Time: 50 ps  Iteration: 0  Instance: /tb_paddsb
+# 1
+# Break in Module tb_paddsb at C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_paddsb.v line 50
+# Compile of tb_paddsb.v was successful.
+vsim tb_paddsb
+# End time: 21:11:59 on Oct 25,2024, Elapsed time: 0:03:52
+# Errors: 0, Warnings: 2
+# vsim tb_paddsb 
+# Start time: 21:11:59 on Oct 25,2024
+# Loading work.tb_paddsb
+# Loading work.paddsb
+# Loading work.adder_4bit
+# Loading work.adder_1bit
+# Loading work.CLA
+vsim tb_paddsb
+# End time: 21:12:05 on Oct 25,2024, Elapsed time: 0:00:06
+# Errors: 0, Warnings: 1
+# vsim tb_paddsb 
+# Start time: 21:12:05 on Oct 25,2024
+# Loading work.tb_paddsb
+# Loading work.paddsb
+# Loading work.adder_4bit
+# Loading work.adder_1bit
+# Loading work.CLA
+run -all
+# Test 1: A = 1234, B = 4321, Sum = 5555, Expected = 16'h5555
+# Test 2: A = f234, B = 0001, Sum = f235, Expected = 16'hF235
+# Test 3: A = ffff, B = 0001, Sum = fff0, Expected = 16'h0000
+# Error: Test 3 failed! Expected 16'h0000, got fff0
+# Test 4: A = 0000, B = 0000, Sum = 0000, Expected = 16'h0000
+# Test 5: A = aaaa, B = 5555, Sum = ffff, Expected = 16'hFFFF
+# ** Note: $finish    : C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_paddsb.v(64)
+#    Time: 50 ps  Iteration: 0  Instance: /tb_paddsb
+# 1
+# Break in Module tb_paddsb at C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_paddsb.v line 64
+# Compile of paddsb.v was successful.
+vsim tb_paddsb
+# End time: 21:14:33 on Oct 25,2024, Elapsed time: 0:02:28
+# Errors: 0, Warnings: 3
+# vsim tb_paddsb 
+# Start time: 21:14:33 on Oct 25,2024
+# Loading work.tb_paddsb
+# Loading work.paddsb
+# Loading work.adder_4bit
+# Loading work.adder_1bit
+# Loading work.CLA
+run -all
+# ovfl: 0 0 0 0
+# Test 1: A = 1234, B = 4321, Sum = 5555, Expected = 16'h5555
+# Test 2: A = f234, B = 0001, Sum = f235, Expected = 16'hF235
+# Test 3: A = ffff, B = 0001, Sum = fff0, Expected = 16'h0000
+# Error: Test 3 failed! Expected 16'h0000, got fff0
+# Test 4: A = 0000, B = 0000, Sum = 0000, Expected = 16'h0000
+# Test 5: A = aaaa, B = 5555, Sum = ffff, Expected = 16'hFFFF
+# ** Note: $finish    : C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_paddsb.v(64)
+#    Time: 50 ps  Iteration: 0  Instance: /tb_paddsb
+# 1
+# Break in Module tb_paddsb at C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_paddsb.v line 64
+# Compile of tb_paddsb.v was successful.
+vsim tb_paddsb
+# End time: 21:18:59 on Oct 25,2024, Elapsed time: 0:04:26
+# Errors: 0, Warnings: 2
+# vsim tb_paddsb 
+# Start time: 21:18:59 on Oct 25,2024
+# Loading work.tb_paddsb
+# Loading work.paddsb
+# Loading work.adder_4bit
+# Loading work.adder_1bit
+# Loading work.CLA
+run -all
+# ovfl: 0 0 0 0
+# Test 1: A = 1234, B = 4321, Sum = 5555, Expected = 16'h5555
+# Test 2: A = f234, B = 0001, Sum = f235, Expected = 16'hF235
+# ovfl: 1 0 0 0
+# Test 3: A = ffff, B = 0008, Sum = fff7, Expected = 16'h0000
+# Error: Test 3 failed! Expected 16'hffff, got fff7
+# ovfl: 0 0 0 0
+# Test 4: A = 0000, B = 0000, Sum = 0000, Expected = 16'h0000
+# Test 5: A = aaaa, B = 5555, Sum = ffff, Expected = 16'hFFFF
+# ** Note: $finish    : C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_paddsb.v(64)
+#    Time: 50 ps  Iteration: 0  Instance: /tb_paddsb
+# 1
+# Break in Module tb_paddsb at C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_paddsb.v line 64
+# Compile of paddsb.v was successful.
+tb_paddsb
+# invalid command name "tb_paddsb"
+vsim tb_paddsb
+# End time: 21:34:20 on Oct 25,2024, Elapsed time: 0:15:21
+# Errors: 0, Warnings: 3
+# vsim tb_paddsb 
+# Start time: 21:34:20 on Oct 25,2024
+# Loading work.tb_paddsb
+# Loading work.paddsb
+# Loading work.adder_4bit
+# Loading work.adder_1bit
+# Loading work.CLA
+run -all
+# ovfl: 0 0 0 0
+# Test 1: A = 1234, B = 4321, Sum = 5555, Expected = 16'h5555
+# Test 2: A = f234, B = 0001, Sum = f235, Expected = 16'hF235
+# ovfl: 1 0 0 0
+# Test 3: A = ffff, B = 0008, Sum = fff8, Expected = 16'h0000
+# ovfl: 0 0 0 0
+# Test 4: A = 0000, B = 0000, Sum = 0000, Expected = 16'h0000
+# Test 5: A = aaaa, B = 5555, Sum = ffff, Expected = 16'hFFFF
+# ** Note: $finish    : C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_paddsb.v(64)
+#    Time: 50 ps  Iteration: 0  Instance: /tb_paddsb

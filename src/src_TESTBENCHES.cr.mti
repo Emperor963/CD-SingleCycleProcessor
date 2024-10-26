@@ -30,7 +30,14 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 ** Error: C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_Mux.v(32): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
 ** Error: C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_Mux.v(34): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
 
-} {5.0 6.0 7.0 8.0 9.0 11.0} {}} C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_red.v {1 {vlog -work work -stats=none C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_red.v
+} {5.0 6.0 7.0 8.0 9.0 11.0} {}} C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_claAddSub.v {1 {vlog -work work -stats=none C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_claAddSub.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module tb_claAddSub
+
+Top level modules:
+	tb_claAddSub
+
+} {} {}} C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_red.v {1 {vlog -work work -stats=none C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_red.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module tb_red
 
@@ -72,6 +79,14 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	tb_SignExtend4bit
 
+} {} {}} C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/ALU.v {2 {vlog -work work -stats=none C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/ALU.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module ALU
+** Warning: C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/ALU.v(47): (vlog-2643) Unterminated string literal continues onto next line.
+
+Top level modules:
+	ALU
+
 } {} {}} C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/MUX4bit_2to1.v {1 {vlog -work work -stats=none C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/MUX4bit_2to1.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module MUX4bit_2to1
@@ -86,15 +101,9 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	adder_4bit
 
-} {} {}} C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/red.v {2 {vlog -work work -stats=none C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/red.v
+} {} {}} C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/red.v {1 {vlog -work work -stats=none C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/red.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module red
-** Warning: C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/red.v(34): (vlog-2697) MSB 11 of part-select into 'Sum_a' is out of bounds.
-** Warning: C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/red.v(34): (vlog-2697) LSB 8 of part-select into 'Sum_a' is out of bounds.
-** Warning: C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/red.v(35): (vlog-2697) MSB 15 of part-select into 'Sum_b' is out of bounds.
-** Warning: C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/red.v(35): (vlog-2697) LSB 12 of part-select into 'Sum_b' is out of bounds.
-** Warning: C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/red.v(38): (vlog-2697) MSB 7 of part-select into 'Sum_d' is out of bounds.
-** Warning: C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/red.v(38): (vlog-2697) LSB 4 of part-select into 'Sum_d' is out of bounds.
 
 Top level modules:
 	red

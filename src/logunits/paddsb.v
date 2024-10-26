@@ -18,19 +18,23 @@ adder_4bit add1 (.A(A[11:8]), .B(B[11:8]), .C(1'b0), .Sum(tempSum[11:8]), .Cout(
 adder_4bit add2 (.A(A[7:4]), .B(B[7:4]), .C(1'b0), .Sum(tempSum[7:4]), .Cout(Cout[2]), .P(dummy1), .G(dummy2), .ovfl(ovfl[1]));
 adder_4bit add3 (.A(A[3:0]), .B(B[3:0]), .C(1'b0), .Sum(tempSum[3:0]), .Cout(Cout[3]), .P(dummy1), .G(dummy2), .ovfl(ovfl[0]));
 
+initial begin 
+$monitor("ovfl: %b %b %b %b", ovfl[0], ovfl[1], ovfl[2], ovfl[3]);
+end
 
 
-assign  Sum[15:12] = (tempSum[15] & ovfl[3]) ? 4'b1000:
-              (!tempSum[15] & ovfl[3] ) ? 4'b0111:tempSum[15:12];
 
-assign  Sum[11:8] = (tempSum[11] & ovfl[2]) ? 4'b1000:
-              (!tempSum[11] & ovfl[2]) ? 4'b0111:tempSum[11:8];
+assign  Sum[15:12] = (tempSum[15] & ovfl[3]) ? 4'b0111:
+              (!tempSum[15] & ovfl[3] ) ? 4'b1000:tempSum[15:12];
 
-assign  Sum[7:4] = (tempSum[7] & ovfl[1]) ? 4'b1000:
-              (!tempSum[7] & ovfl[1]) ? 4'b0111:tempSum[7:4];
+assign  Sum[11:8] = (tempSum[11] & ovfl[2]) ? 4'b0111:
+              (!tempSum[11] & ovfl[2]) ? 4'b1000:tempSum[11:8];
 
-assign  Sum[3:0] = (tempSum[3] & ovfl[0]) ? 4'b1000:
-              (!tempSum[3] & ovfl[0]) ? 4'b0111:tempSum[3:0];
+assign  Sum[7:4] = (tempSum[7] & ovfl[1]) ? 4'b0111:
+              (!tempSum[7] & ovfl[1]) ? 4'b1000:tempSum[7:4];
+
+assign  Sum[3:0] = (tempSum[3] & ovfl[0]) ? 4'b0111:
+              (!tempSum[3] & ovfl[0]) ? 4'b1000:tempSum[3:0];
 
 
 endmodule 

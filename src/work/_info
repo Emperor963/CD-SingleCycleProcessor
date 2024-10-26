@@ -316,23 +316,23 @@ R6
 R7
 n@m@u@x4bit_2to1
 vpaddsb
-R0
+!s110 1729910046
 !i10b 1
-!s100 UJ2=bXM2ZN]Oe[bD7b0T?3
+!s100 l926[N546fHNg30dkKl3o1
 R1
-I^zBlnb;:VoH^T[gK^nHON0
+IcOOSd_S`ZOoiCj6N`1MJa2
 R2
 R3
-w1729827324
+w1729909992
 8C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/paddsb.v
 FC:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/paddsb.v
-!i122 219
-L0 1 36
+!i122 242
+L0 1 40
 R4
 r1
 !s85 0
 31
-R5
+!s108 1729910046.000000
 !s107 C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/paddsb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/paddsb.v|
 !i113 1
@@ -362,23 +362,23 @@ R10
 R6
 R7
 vred
-R0
+!s110 1729907618
 !i10b 1
-!s100 4I24Sj5W^CmzWcMX=5Eb:1
+!s100 0T3U^`oLUZ:?Bn<H_8P2U1
 R1
-I:DcgG@NRm3gP;29Tj5RTg1
+IL0d_RYWdn79RRU94a3_lS3
 R2
 R3
-w1729901678
+w1729907586
 8C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/red.v
 FC:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/red.v
-!i122 225
+!i122 235
 L0 1 57
 R4
 r1
 !s85 0
 31
-R5
+!s108 1729907618.000000
 !s107 C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/red.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/red.v|
 !i113 1
@@ -520,6 +520,53 @@ r1
 R5
 !s107 C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/srl.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/srl.v|
+!i113 1
+R6
+R7
+vtb_claAddSub
+!s110 1729908466
+!i10b 1
+!s100 BTzlbj1>=N<=52PkNASna3
+R1
+I?jg;^XF[0WPRQX>BGcHWU2
+R2
+R3
+w1729817700
+8C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_claAddSub.v
+FC:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_claAddSub.v
+!i122 237
+L0 3 69
+R4
+r1
+!s85 0
+31
+!s108 1729908466.000000
+!s107 C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_claAddSub.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_claAddSub.v|
+!i113 1
+R6
+R7
+ntb_cla@add@sub
+vtb_paddsb
+!s110 1729909130
+!i10b 1
+!s100 JA8Vo5<Wi1N5iK<7A[a0O1
+R1
+I_edF?Dk`7EgVQE^J5R2D^3
+R2
+R3
+w1729909121
+8C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_paddsb.v
+FC:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_paddsb.v
+!i122 241
+L0 1 67
+R4
+r1
+!s85 0
+31
+!s108 1729909130.000000
+!s107 C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_paddsb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/tb_paddsb.v|
 !i113 1
 R6
 R7
