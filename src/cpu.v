@@ -11,8 +11,8 @@ module cpu(
 wire pc_curr, pc_next;
 
 //Initialize 
-wire[2:0] flag_in, flag, wr //Flag register variables
-wire[15:0] instruction //Instruction wire
+wire[2:0] flag_in, flag, wr; //Flag register variables
+wire[15:0] instruction; //Instruction wire
 
 
 wire[15:0] ALUOut; //Output from ALU
