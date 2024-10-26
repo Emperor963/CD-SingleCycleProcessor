@@ -23,25 +23,25 @@ xor_module xorC(.A(In1), .B(In2), .X(zor));
 
 wire[2:0] t1, t2, t3, t4, t5, t6, t7, t8;
 
-assign t1 = ALUOp ^ 3'b000;
-assign t2 = ALUOp ^ 3'b001;
-assign t3 = ALUOp ^ 3'b010;
-assign t4 = ALUOp ^ 3'b011;
-assign t5 = ALUOp ^ 3'b100;
-assign t6 = ALUOp ^ 3'b101;
-assign t7 = ALUOp ^ 3'b110;
-assign t8 = ALUOp ^ 3'b111;
+assign t1 = !(ALUOp ^ 3'b000);
+assign t2 = !(ALUOp ^ 3'b001);
+assign t3 = !(ALUOp ^ 3'b010);
+assign t4 = !(ALUOp ^ 3'b011);
+assign t5 = !(ALUOp ^ 3'b100);
+assign t6 = !(ALUOp ^ 3'b101);
+assign t7 = !(ALUOp ^ 3'b110);
+assign t8 = !(ALUOp ^ 3'b111);
 
 wire tt1, tt2, tt3, tt4, tt5, tt6, tt7, tt8, tt9;
 
-assign tt1 = !(t1[0] & t1[1] & t1[2]);
-assign tt2 = !(t2[0] & t2[1] & t2[2]);
-assign tt3 = !(t3[0] & t3[1] & t3[2]);
-assign tt4 = !(t4[0] & t4[1] & t4[2]);
-assign tt5 = !(t5[0] & t5[1] & t5[2]);
-assign tt6 = !(t6[0] & t6[1] & t6[2]);
-assign tt7 = !(t7[0] & t7[1] & t7[2]);
-assign tt8 = !(t8[0] & t8[1] & t8[2]);
+assign tt1 = t1[0] & t1[1] & t1[2];
+assign tt2 = t2[0] & t2[1] & t2[2];
+assign tt3 = t3[0] & t3[1] & t3[2];
+assign tt4 = t4[0] & t4[1] & t4[2];
+assign tt5 = t5[0] & t5[1] & t5[2];
+assign tt6 = t6[0] & t6[1] & t6[2];
+assign tt7 = t7[0] & t7[1] & t7[2];
+assign tt8 = t8[0] & t8[1] & t8[2];
 
 //Sorry I like ternary statements better than case
 
