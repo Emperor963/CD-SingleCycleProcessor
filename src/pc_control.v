@@ -3,8 +3,10 @@ module pc_control(
     input [8:0] imm,
     input [2:0] FLAG,
     input [2:0] C,
+    input [15:0] rd1,
 
-    output [15:0] pc_out
+    output [15:0] pc_out,
+    output [15:0] pc_update
 );
 
 wire [15:0] SEXTImm;
@@ -16,15 +18,14 @@ wire N = FLAG[0];
 wire Z = FLAG[1];
 wire V = FLAG[2];
 
-wire[15:0] PC_update, target_address;
+wire[15:0] PC_update, target_address, ta_temp;
 
 clAddSub pcAddr(.A(pc_in), .Bin(16'd2), .Cin(1'b0), .isSub(1'b0), .S(PC_update) 
                 //, .Cout(), .ovfl()
                 );
-claAddSub targAddr(.A(PC_update), .Bin(targetAddr), .Cin(1'b0), .isSub(1'b0), .S(target_address)
-                    );
+claAddSub targAddr(.A(PC_update), .Bin(targetAddr), .Cin(1'b0), .isSub(1'b0), .S(ta_temp));
 
-
+assign target_address = ta_temp ^ rd1; //ONE TIME PAD of ta_temp with rd_1
 reg [15:0] out;
 always @(*) begin
     
@@ -55,6 +56,7 @@ end
 
 
 assign pc_out = out;
+assign pc_update = PC_update;
 
 
 endmodule
