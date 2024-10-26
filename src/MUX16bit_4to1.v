@@ -23,5 +23,4 @@ assign out = (t1[0] & t1[1]) ? sigA :
              //(t4[0] & t4[1]) ? sigD : 
 
 
-
 endmodule
