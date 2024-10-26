@@ -35,6 +35,7 @@ assign t8 = ALUOp ^ 3'b111;
 wire tt1, tt2, tt3, tt4, tt5, tt6, tt7, tt8, tt9;
 
 assign tt1 = !(t1[0] & t1[1] & t1[2]);
+$display("t1 val, tt1 val %b %b", t1,tt1);
 assign tt2 = !(t2[0] & t2[1] & t2[2]);
 assign tt3 = !(t3[0] & t3[1] & t3[2]);
 assign tt4 = !(t4[0] & t4[1] & t4[2]);
