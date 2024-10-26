@@ -42,7 +42,7 @@ wire [15:0] pcc_out;
 wire [15:0] pc_up;
 //PC Control
 pc_control pcController(.pc_in(pc_curr), .imm(instruction[8:0]), .FLAG(flag), 
-                        .C(instruction[11:9]), .rd1(rd1) .pc_out(pcc_out), .pc_update(pc_up));
+                        .C(instruction[11:9]), .rd1(rd1), .pc_out(pcc_out), .pc_update(pc_up));
 
 wire [15:0] braddr = pcc_out ^ rd1; //decode encrypted content of pc using rd1
 
