@@ -42,7 +42,9 @@ assign tt5 = !(t5[0] & t5[1] & t5[2]);
 assign tt6 = !(t6[0] & t6[1] & t6[2]);
 assign tt7 = !(t7[0] & t7[1] & t7[2]);
 assign tt8 = !(t8[0] & t8[1] & t8[2]);
-
+initial begin
+$monitor("idk anything as long as it prints out the two values t1= %b ; tt1+ %b", t1, tt1);
+end
 //Sorry I like ternary statements better than case
 
 assign ALUOut = tt1 ? sum :
