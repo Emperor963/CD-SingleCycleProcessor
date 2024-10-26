@@ -56,23 +56,23 @@ R5
 R6
 R7
 vALU
-!s110 1729904798
+!s110 1729906372
 !i10b 1
-!s100 dO^O6OWb[:zk]283AIgVe2
+!s100 ]iW?l6O1YWPnKPkjzlgD>1
 R1
-IL<^l:;[z0CGA1bXBAjb?G1
+IH_J`LQM^_BoaeTDLkVL_<2
 R2
 R3
-w1729904703
+w1729906339
 8C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/ALU.v
 FC:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/ALU.v
-!i122 228
-L0 1 69
+!i122 232
+L0 1 73
 R4
 r1
 !s85 0
 31
-!s108 1729904798.000000
+!s108 1729906372.000000
 !s107 C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/ALU.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/annak/programmingFiles/CD-SingleCycleProcessor/src/ALU.v|
 !i113 1
