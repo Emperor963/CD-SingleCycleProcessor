@@ -29,13 +29,13 @@ module cpu_control(
     reg [1:0]PCSource;
 
     // Assign bits of result to output ports
-    assign RegRead  = result[0];  // Bit 0 of result
-    assign MemRead  = result[1];  // Bit 1 of result
-    assign MemWrite = result[2];  // Bit 2 of result
+    assign RegRead  = result[6];  // Bit 0 of result
+    assign MemRead  = result[5];  // Bit 1 of result
+    assign MemWrite = result[4];  // Bit 2 of result
     assign ALUsrc   = result[3];  // Bit 3 of result
-    assign RegWrite = result[4];  // Bit 4 of result
-    assign LH       = result[5];  // Bit 5 of result
-    assign HLT      = result[6];
+    assign RegWrite = result[2];  // Bit 4 of result
+    assign LH       = result[1];  // Bit 5 of result
+    assign HLT      = result[0];
 
     assign ALUOp = ALU;
 
