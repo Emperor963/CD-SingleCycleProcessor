@@ -23,7 +23,7 @@ wire[15:0] rs, rt,rd, src1, src2, dst_reg, rd2, bmrd, alurd, memrd;
 
 
 //CONTROL SIGNALS
-wire RegRead, MemRead, MemWrite, ALUSrc, RegWrite, PCW, LH; //1 bit control signals
+wire RegRead, MemRead, MemWrite, ALUSrc, RegWrite, PCW, LH, halt; //1 bit control signals
 wire [1:0] MemtoReg; // 2 bit bus for 4 to 1 MUX
 wire [2:0] ALUOp; // 3 bit ALU Control
 wire [1:0] PCSrc; // 2 bit PCSrc
@@ -35,8 +35,8 @@ wire [15:0] ALU2; //ALU Input 2
 flag_reg FLAG(.clk(clk), .rst(rst), .wr(wr), .in(flag_in), .out(flag));
 
 
-//UPDATE WR
-pc_reg pcStore(.clk(clk), .rst(rst), .d(), .wr(), .q(pc_curr));
+//Shaky logic with .d
+pc_reg pcStore(.clk(clk), .rst(rst), .d(next_pc), .wr(!halt), .q(pc_curr));
 
 wire [15:0] pcc_out;
 wire [15:0] pc_up;
@@ -47,12 +47,12 @@ pc_control pcController(.pc_in(pc_curr), .imm(instruction[8:0]), .FLAG(flag),
 wire [15:0] braddr = pcc_out ^ rd1; //decode encrypted content of pc using rd1
 
 //sigC for HALT
-MUX16bit_2to1 pcmux(.sigA(pc_up), .sigB(rd1), .sigC(), .sigD(braddr), .control(PCSrc), .out(pc_next));
+MUX16bit_2to1 pcmux(.sigA(pc_up), .sigB(rd1), .sigC(16'b0), .sigD(braddr), .control(PCSrc), .out(pc_next));
 
 //CPU Control
 cpu_control cpuController(.control(instruction[15:12]), .RegRead(RegRead), .MemRead(MemRead), 
                           .MemtoReg(MemtoReg), .MemWrite(MemWrite), .ALUOp(ALUOp),
-                          .ALUSrc(ALUSrc), .RegWrite(RegWrite), .PCSour(PCSrc), .LH(LH));
+                          .ALUSrc(ALUSrc), .RegWrite(RegWrite), .PCSour(PCSrc), .LH(LH), .hlt(halt));
 
 //Instruction Memory
 memory1c_instr IMem(.data_out(instruction), .addr(pc_curr), .clk(clk), .rst(rst));
@@ -89,7 +89,7 @@ MUX16_4to1 writerMux(.sigA(pc_up), .sigB(bmrd), .sigC(alurd), .sigD(memrd),
 
 bitman BitManipulator(.LH(LH), .RD1(rd1), .i(instruction[7:0]), .RD(bmrd));
 
-
-
+assign halt = hlt;
+assign pc = pc_curr;
 
 endmodule
