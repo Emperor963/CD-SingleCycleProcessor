@@ -13,7 +13,7 @@ module phase1_cpu_tb ();
   // Instantiate the processor as Design Under Test.
   cpu DUT (
       .clk(clk),
-      .rst(rst),
+      .rst_n(rst),
       .pc (PC),
       .hlt(Halt)
   );
@@ -28,8 +28,8 @@ module phase1_cpu_tb ();
     $display("Simulation starting");
     $display("See verilogsim.log and verilogsim.trace for output");
     inst_count   = 0;
-    trace_file   = $fopen("verilogsim.trace");
-    sim_log_file = $fopen("verilogsim.log");
+    trace_file   = $fopen("sample-verilogsim.trace");
+    sim_log_file = $fopen("sample-verilogsim.log");
   end
 
   // Clock period is 100 time units, and reset length
@@ -55,14 +55,14 @@ module phase1_cpu_tb ();
 
   // Assign internal signals to top level wires.
   // Edit the example below. You must change the signal names on the right hand side to match your naming convention.
-  wire [15:0] Inst = DUT.instr;  // The 16 bit instruction word.
-  wire RegWrite = DUT.write_reg;  // Whether or not register file is being written
+  wire [15:0] Inst = DUT.instruction;  // The 16 bit instruction word.
+  wire RegWrite = DUT.RegWrite;  // Whether or not register file is being written
   wire [3:0] WriteRegister = DUT.dst_reg;  // What 4-bit register number is written
-  wire [15:0] WriteData = DUT.dst_data;  // 16-bit Data being written to the registerfile.
-  wire MemWrite = (DUT.data_mem.enable & DUT.data_mem.wr);  // Memory is being Written
-  wire MemRead = DUT.data_mem.data_out;  // Memory is being Read
-  wire [15:0] MemAddress = DUT.data_mem.addr;  // 16-bit memory address being accessed
-  wire [15:0] MemData = DUT.data_mem.data_in;  // Data written to Memory on memory writes.
+  wire [15:0] WriteData = DUT.rd_data;  // 16-bit Data being written to the registerfile.
+  wire MemWrite = (DUT.MemWrite);  // Memory is being Written
+  wire MemRead = DUT.MemRead;  // Memory is being Read
+  wire [15:0] MemAddress = DUT.memrd;  // 16-bit memory address being accessed
+  wire [15:0] MemData = DUT.rd2;  // Data written to Memory on memory writes.
 
   /* Add anything else you want here */
 
@@ -72,9 +72,13 @@ module phase1_cpu_tb ();
       if (Halt || RegWrite || MemWrite) begin
         inst_count = inst_count + 1;
       end
-      $fdisplay(sim_log_file, "SIMLOG:: Cycle %d PC: %8x I: %8x R: %d %3d %8x M: %d %d %8x %8x",
+      $fdisplay(sim_log_file, "SIMLOG:: Cycle %d PC: %8x Instruction: %8x RegWrite: %d %3d %8x M: %d %d %8x %8x",
                 cycle_count, PC, Inst, RegWrite, WriteRegister, WriteData, MemRead, MemWrite,
                 MemAddress, MemData);
+      //$display("instruction = %h,  flag registers = %b, ALUIn1 = %h, ALUIn2 = %h, ALUOut = %b, flag write = %b, flag in = %b", DUT.instruction[15:12], DUT.flag, DUT.rd1, DUT.aluIn2, DUT.alurd, DUT.fwr, DUT.flag_in);
+      //$display("pc_curr = %d, pc_next = %d, flag = %b, ALUOut = %b, flag_in = %b, pcsrc = %b, Branch address = %b", DUT.pc_curr, DUT.pc_next, DUT.flag, DUT.alurd, DUT.flag_in, DUT.PCSrc, DUT.braddr);
+      $display("PC of instruction = %d, instruction = %h ", DUT.pc_curr, DUT.instruction);
+      $writememh("dumpfile_data.img", DUT.DMem.mem);
       if (RegWrite) begin
         if (MemRead) begin
           // ld
@@ -93,7 +97,7 @@ module phase1_cpu_tb ();
         $fclose(trace_file);
         $fclose(sim_log_file);
 
-				$writememh("dumpfile_data.img", DUT.data_mem.mem);
+				$writememh("dumpfile_data.img", DUT.DMem.mem);
         $finish;
       end else begin
         if (MemWrite) begin
