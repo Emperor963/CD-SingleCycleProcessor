@@ -15,8 +15,8 @@ wire [15:0] targetAddr;
 assign targetAddr = SEXTImm << 1;
 
 wire N = FLAG[0];
-wire Z = FLAG[1];
-wire V = FLAG[2];
+wire V = FLAG[1];
+wire Z = FLAG[2];
 
 wire[15:0] PC_update, target_address, ta_temp;
 
@@ -25,7 +25,10 @@ claAddSub pcAddr(.A(pc_in), .Bin(16'd2), .Cin(1'b0), .isSub(1'b0), .S(PC_update)
                 );
 claAddSub targAddr(.A(PC_update), .Bin(targetAddr), .Cin(1'b0), .isSub(1'b0), .S(ta_temp));
 
-assign target_address = ta_temp ^ rd1; //ONE TIME PAD of ta_temp with rd_1
+
+wire[15:0] rd1Val;
+assign rd1Val = (rd1 === 16'bx) ? 16'd0 : rd1;
+assign target_address = ta_temp ^ rd1Val; //ONE TIME PAD of ta_temp with rd_1
 reg [15:0] out;
 always @(*) begin
     

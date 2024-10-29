@@ -6,6 +6,6 @@ module MUX4bit_2to1(
     output [3:0] out
 );
 
-assign out = control? sigB : sigA;
+assign out = control ? sigB : sigA;
 
 endmodule
